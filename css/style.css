@@ -1,8 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-			
+:root {
+    --primary: #18181b;
+    --accent: #a855f7;
+    --gradient: linear-gradient(90deg, #a855f7 0%, #f59e42 100%);
+    --bg: #f8fafc;
+    --radius: 18px;
+}
+	
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    scroll-behavior: smooth;
+    background: var(--bg);
+    color: var(--primary);
+    margin: 0;
+    padding: 0;
 }
 
 .logo-marquee {
