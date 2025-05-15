@@ -97,3 +97,48 @@ body {
 .portfolio-link:hover {
     color: #f59e42;
 }
+
+/* Mobile menu styles for hamburger functionality */
+@media (max-width: 767px) {
+  header nav .hidden.md\:block {
+    display: none;
+  }
+  body.menu-open header nav .hidden.md\:block {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    /* Match header background and blur */
+    background: #f8fafce1; /* Same as bg-white/90 */
+    backdrop-filter: blur(8px); /* Similar to backdrop-blur-sm */
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.10);
+    z-index: 100;
+  }
+  body.menu-open header nav .hidden.md\:block ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 0;
+    text-align: center;
+    background: transparent;
+  }
+  body.menu-open header nav .hidden.md\:block ul li {
+    margin: 0.5rem 0;
+    background: transparent;
+  }
+  body.menu-open header nav .hidden.md\:block ul li a {
+    display: block;
+    padding: 0.75rem 0;
+    color: #18181b;
+    background: transparent;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0;
+    transition: background 0.2s, color 0.2s;
+  }
+  body.menu-open header nav .hidden.md\:block ul li a:hover {
+    background: rgba(168,85,247,0.08); /* subtle accent on hover */
+    color: #a855f7;
+  }
+}
