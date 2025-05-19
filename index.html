@@ -4,89 +4,257 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mr. Kumar | Freelance Web Developer & Video Editor</title>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-		<link rel="stylesheet" href="css/style.css">
+		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/web/uc-file-uploader-inline.min.css" />
 	</head>
-	<body class="bg-white text-gray-800">
-		<header class="main-header">
-			<div class="header-container">
-				<div class="header-flex">
-					<h1 class="site-title">MR. KUMAR</h1>
-					<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-					<nav class="main-nav">
-						<ul class="nav-list">
-							<li><a href="#home" class="nav-link">Home</a></li>
-							<li><a href="#about" class="nav-link">About</a></li>
-							<li><a href="#services" class="nav-link">Services</a></li>
-							<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-							<li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-							<li><a href="#contact" class="nav-link">Contact</a></li>
-						</ul>
-					</nav>
+    
+	<body>
+		<header
+			class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+			<nav
+				class="container mx-auto px-4 py-4 flex justify-between items-center">
+				<div class="text-2xl font-bold tracking-tight">MR. KUMAR</div>
+				<!-- Hamburger menu button for mobile/tablet -->
+				<button
+					id="menu-toggle"
+					class="md:hidden text-2xl p-2"
+					aria-label="Open Menu">
+					<i class="fas fa-bars"></i>
+				</button>
+				<div class="hidden md:block">
+					<ul class="flex gap-8">
+						<li>
+							<a href="#home" class="hover:text-gray-600 transition-colors"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a href="#about" class="hover:text-gray-600 transition-colors"
+								>About</a
+							>
+						</li>
+						<li>
+							<a href="#services" class="hover:text-gray-600 transition-colors"
+								>Services</a
+							>
+						</li>
+						<li>
+							<a href="#portfolio" class="hover:text-gray-600 transition-colors"
+								>Portfolio</a
+							>
+						</li>
+						<li>
+							<a
+								href="#testimonials"
+								class="hover:text-gray-600 transition-colors"
+								>Testimonials</a>
+						</li>
+						<li>
+							<a href="#contact" class="hover:text-gray-600 transition-colors"
+								>Contact</a
+							>
+						</li>
+					</ul>
 				</div>
-			</div>
+			</nav>
 		</header>
 
-		<section id="home" class="hero-section">
-			<div class="hero-bg-shapes">
-				<div class="hero-circle1"></div>
-				<div class="hero-circle2"></div>
+		<section
+			id="home"
+			class="min-h-screen flex flex-col justify-center items-center pt-24 pb-12 relative bg-gradient-to-br from-purple-100 via-pink-50 to-yellow-50 overflow-hidden">
+			<!-- Decorative Blobs -->
+			<div class="absolute inset-0 pointer-events-none">
+				<div
+					class="w-96 h-96 bg-gradient-to-tr from-purple-300 via-pink-200 to-yellow-100 rounded-full blur-3xl opacity-60 absolute -top-32 -left-32"></div>
+				<div
+					class="w-96 h-96 bg-gradient-to-tr from-yellow-200 via-pink-100 to-purple-200 rounded-full blur-3xl opacity-60 absolute bottom-0 right-0"></div>
 			</div>
-			<div class="hero-content">
-				<h2 class="hero-title">
-					Crafting Digital<br>Experiences
-				</h2>
-				<p class="hero-desc">
-					I'm Mr. Kumar, a freelance web developer & video editor helping small businesses go online with mobile-first, high-converting websites and creative video content.
-				</p>
-				<a href="#contact" class="hero-cta">Schedule a Call</a>
+			<div
+				class="relative z-10 flex flex-col md:flex-row items-center gap-10 w-full max-w-5xl px-4">
+				<!-- Hero Image -->
+				<div class="text-center md:text-left flex-1">
+					<h1
+						class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent drop-shadow-lg mb-6 p-3">
+						Transforming Business into <br class="hidden sm:block" />
+						Stunning Digital Experiences
+					</h1>
+					<p
+						class="text-base sm:text-lg md:text-xl text-gray-700 max-w-2xl mx-auto md:mx-0 mb-8">
+						Are you ready to elevate your business and captivate your audience?
+						As a Web Application Developer, Technical Support Engineer, and
+						Video Editor, I specialize in creating mobile-first websites and
+						engaging video content with dedicated support that not only look
+						great but drive results.
+					</p>
+					<a
+						href="#contact"
+						class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-gray-800 transition-all duration-300 hover:scale-105">
+						Schedule a Call
+					</a>
+				</div>
 			</div>
 		</section>
 
-		<section class="logo-marquee-section">
-			<div class="logo-marquee-container">
-				<div class="logo-marquee">
-					<!-- Company logos will be added here -->
-					<div class="logo-item">
-						<img src="assets/logo1.png" alt="Company Logo" class="logo-img">
+		<!-- Experience Section -->
+		<section class="py-16 bg-purple-200">
+			<div class="container mx-auto px-4">
+				<!--Logos Container Starting-->
+				<div class="overflow-hidden mt-1 p-2">
+					<div class="logo-marquee flex gap-16 items-center">
+						<div class="logo-item flex-shrink-0">
+							<!--Amazon-->
+							<img
+								src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750"
+								alt="Upwork Logo"
+								class="h-10 w-auto"
+								srcset="
+									https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-400   400w,
+									https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-800   800w,
+									https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-1200 1200w
+								"
+								sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px, 1200px"
+								alt="Amazon Logo" />
+						</div>
+						<div class="logo-item flex-shrink-0">
+							<img
+							src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750"
+							alt="Upwork Logo" class="h-10" w-auto" srcset="
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-400
+							400w,
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-800
+							800w,
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-1200
+							1200w" sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,
+							1200px" alt="Amazon Logo" />
+						</div>
+						<div class="logo-item flex-shrink-0">
+							<img
+							src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750"
+							alt="Upwork Logo" class="h-10" w-auto" srcset="
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-400
+							400w,
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-800
+							800w,
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-1200
+							1200w" sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,
+							1200px" alt="Amazon Logo" />
+						</div>
+						<div class="logo-item flex-shrink-0">
+							<img
+							src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750"
+							alt="Upwork Logo" class="h-10" w-auto" srcset="
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-400
+							400w,
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-800
+							800w,
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-1200
+							1200w" sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,
+							1200px" alt="Amazon Logo" />
+						</div>
+						<div class="logo-item flex-shrink-0">
+							<img
+							src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750"
+							alt="Upwork Logo" class="h-10" w-auto" srcset="
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-400
+							400w,
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-800
+							800w,
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-1200
+							1200w" sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,
+							1200px" alt="Amazon Logo" />
+						</div>
+						<div class="logo-item flex-shrink-0">
+							<img
+							src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750"
+							alt="Upwork Logo" class="h-10" w-auto" srcset="
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-400
+							400w,
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-800
+							800w,
+							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_2.webp?updatedAt=1747642154750?tr=w-1200
+							1200w" sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,
+							1200px" alt="Amazon Logo" />
+						</div>
 					</div>
 					<!-- Add more logos as needed -->
 				</div>
 			</div>
 		</section>
-
-		<section id="about" class="about-section">
-			<div class="about-container">
-				<div class="about-content">
-					<h2 class="about-title">About</h2>
-					<p class="about-desc">
-						Hi, I'm Mr. Kumar, a freelance Web Developer & Video Editor helping small businesses go online with mobile-first, high-converting websites and creative video content.
-						I specialize in helping small business in building a powerful yet impactful online presence by leveraging clean, fast, and mobile-first websites and engaging viral video content that help small businesses establish their online presence. With expertise in HTML, CSS, Responsive Design, mordern JavaScript, and video editing, I focus on delivering best solutions that work seamlessly across all devices while maintaining a best aesthetic that puts your content first with clear CTAs and focus on boosing your business growth. 
+		<section id="about" class="03about-me">
+			<h1 class="text-6xl text-center text-grey-500 font-bold m-10">About</h1>
+			<div class="container mx-auto px-4 left-right-items">
+				<div class="left-items">
+					<p class="text-lg text-gray-600 leading-relaxed">
+						Hi, I'm Mr. Kumar, a freelance Web Developer & Video Editor helping
+						small businesses go online with mobile-first, high-converting
+						websites and creative video content. I specialize in helping small
+						business in building a powerful yet impactful online presence by
+						leveraging clean, fast, and mobile-first websites and engaging viral
+						video content that help small businesses establish their online
+						presence. With expertise in HTML, CSS, Responsive Design, mordern
+						JavaScript, and video editing, I focus on delivering best solutions
+						that work seamlessly across all devices while maintaining a best
+						aesthetic that puts your content first with clear CTAs and focus on
+						boosing your business growth.
 					</p>
+				</div>
+				<div class="right-items">
+					<img
+						src="/assets/img/MrKumarPhoto20221228.jpg"
+						alt="Mr. Kumar Photo" />
 				</div>
 			</div>
 		</section>
-
-		<section id="services" class="services-section">
-			<div class="services-container">
-				<h2 class="services-title">Services</h2>
-				<div class="services-grid">
-					<div class="service-card">
-						<div class="service-icon">📱</div>
-						<h3 class="service-title">Mobile-First Design</h3>
-						<p class="service-desc">Responsive, fast, and beautiful websites optimized for mobile devices that look perfect on any device. Built from scratch for your business goals, ensuring a pixel perfect, ultra fast experience across all screen sizes.</p>
+		<section id="services" class="py-24 bg-gray-50">
+			<div class="container mx-auto px-4">
+				<h2 class="text-3xl font-bold mb-12 text-center">Services</h2>
+				<div class="grid md:grid-cols-3 gap-8">
+					<div class="bg-white p-8 rounded-lg shadow-sm">
+						<div class="w-20 h-12 flex items-center justify-center mb-6">
+							📱
+						</div>
+						<h3 class="text-xl font-semibold mb-4">Mobile-First Design</h3>
+						<p class="text-gray-600">
+							Responsive, fast, and beautiful websites optimized for mobile
+							devices that look perfect on any device. Built from scratch for
+							your business goals, ensuring a pixel perfect, ultra fast
+							experience across all screen sizes.
+						</p>
 					</div>
-					<div class="service-card">
-						<div class="service-icon service-icon-bg"><i class="fas fa-code"></i></div>
-						<h3 class="service-title">Custom Development</h3>
-						<p class="service-desc">Clean, hand-coded solutions tailored to your specific business needs and goals. Mainly focusing on performance, SEO and best user experience. Either you need a simple landing page or a complex web application, We offer best solutions that perfectly suits your business goals.</p>
+					<div class="bg-white p-8 rounded-lg shadow-sm">
+						<div
+							class="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-6">
+							<i class="fas fa-code text-white text-xl"></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-4">Custom Development</h3>
+						<p class="text-gray-600">
+							Clean, hand-coded solutions tailored to your specific business
+							needs and goals. Mainly focusing on performance, SEO and best user
+							experience. Either you need a simple landing page or a complex web
+							application, We offer best solutions that perfectly suits your
+							business goals.
+						</p>
 					</div>
-					<div class="service-card">
-						<div class="service-icon service-icon-bg"><i class="fas fa-video"></i></div>
-						<h3 class="service-title">Video Editing</h3>
-						<p class="service-desc">Professional editing services for Promos, Reels, YouTube Shorts, Podcasts, Travel Videos, Documentaries, Testimonials & more.
-						Edited using DaVinci Resolve and Adobe Premiere Pro with cinematic cuts, color correction, storytelling, and premium transitions and more.</p>
+					<div class="bg-white p-8 rounded-lg shadow-sm">
+						<div
+							class="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-6">
+							<i class="fas fa-video text-white text-xl"></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-4">Video Editing</h3>
+						<p class="text-gray-600">
+							Professional editing services for Promos, Reels, YouTube Shorts,
+							Podcasts, Travel Videos, Documentaries, Testimonials & more.
+							Edited using DaVinci Resolve and Adobe Premiere Pro with cinematic
+							cuts, color correction, storytelling, and premium transitions and
+							more.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -99,52 +267,87 @@
 				<div class="portfolio-card">
 					<div class="portfolio-thumb">🌐</div>
 					<div class="portfolio-content">
-						<div class="portfolio-project-title">AI Driven Web Development Company</div>
-						<div class="portfolio-desc">A modern website for an AI-focused development company.</div>
-						<a href="https://www.growthloopstechnology.com/" class="portfolio-link" target="_blank">View Project →</a>
+
+						<div class="portfolio-title">AI Driven Web Development Company</div>
+						<div class="portfolio-desc">
+							A modern website for an AI-focused development company.
+						</div>
+						<a
+							href="https://www.growthloopstechnology.com/"
+							class="portfolio-link"
+							target="_blank"
+							>View Project →</a
+						>
 					</div>
 				</div>
 				<div class="portfolio-card">
 					<div class="portfolio-thumb">✈️</div>
 					<div class="portfolio-content">
-						<div class="portfolio-project-title">Travel Agency Website</div>
-						<div class="portfolio-desc">A responsive travel agency platform for booking and exploring.</div>
-						<a href="https://hellolalit.github.io/nltravel/" class="portfolio-link" target="_blank">View Project →</a>
+						<div class="portfolio-title">Travel Agency Website</div>
+						<div class="portfolio-desc">
+							A responsive travel agency platform for booking and exploring.
+						</div>
+						<a
+							href="https://hellolalit.github.io/nltravel/"
+							class="portfolio-link"
+							target="_blank"
+							>View Project →</a
+						>
 					</div>
 				</div>
 				<div class="portfolio-card">
 					<div class="portfolio-thumb">💼</div>
 					<div class="portfolio-content">
-						<div class="portfolio-project-title">Commission Tracking Software</div>
-						<div class="portfolio-desc">A comprehensive commission management solution for sales teams.</div>
-						<a href="https://hellolalit.github.io/elevatehq/" class="portfolio-link" target="_blank">View Project →</a>
+						<div class="portfolio-title">Commission Tracking Software</div>
+						<div class="portfolio-desc">
+							A comprehensive commission management solution for sales teams.
+						</div>
+						<a
+							href="https://hellolalit.github.io/elevatehq/"
+							class="portfolio-link"
+							target="_blank"
+							>View Project →</a
+						>
 					</div>
 				</div>
 				<div class="portfolio-card">
 					<div class="portfolio-thumb">🧘‍♂️</div>
 					<div class="portfolio-content">
-						<div class="portfolio-project-title">Wellness Campaign Landing Page</div>
-						<div class="portfolio-desc">A focused landing page for wellness and health campaigns.</div>
-						<a href="https://aasthawellness.netlify.app/" class="portfolio-link" target="_blank">View Project →</a>
+						<div class="portfolio-title">Wellness Campaign Landing Page</div>
+						<div class="portfolio-desc">
+							A focused landing page for wellness and health campaigns.
+						</div>
+						<a
+							href="https://aasthawellness.netlify.app/"
+							class="portfolio-link"
+							target="_blank"
+							>View Project →</a
+						>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<section id="testimonials" class="testimonials-section">
-			<div class="testimonials-container">
-				<h2 class="testimonials-title">Client Testimonials</h2>
-				<div class="testimonials-grid">
-					<div class="testimonial-card">
-						<div class="testimonial-header">
-							<div class="testimonial-avatar"></div>
-							<div class="testimonial-info">
-								<h4 class="testimonial-name">Alina Ostrovska</h4>
-								<p class="testimonial-role">General Manager, Kanti Design</p>
+		<section id="testimonials" class="py-24 bg-gray-50">
+			<div class="container mx-auto px-4">
+				<h2 class="text-3xl font-bold mb-12 text-center">
+					Client Testimonials
+				</h2>
+				<div class="grid md:grid-cols-3 gap-8">
+					<div class="bg-white p-8 rounded-lg shadow-sm">
+						<div class="flex items-center mb-4">
+							<div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+							<div class="ml-4">
+								<h4 class="font-semibold">Alina Ostrovska</h4>
+								<p class="text-sm text-gray-600">
+									General Manager, Kanti Design
+								</p>
 							</div>
 						</div>
-						<p class="testimonial-text">"The job was done on time, and with very nice attitude! I liked the video. Thank you!"</p>
-						<div class="testimonial-stars">★★★★★</div>
+						<p class="text-gray-600">
+							"The job was done on time, and with very nice attitude! I liked
+							the video. Thank you!"
+						</p>
+						<div class="mt-4 text-yellow-400">★★★★★</div>
 					</div>
 					<div class="testimonial-card">
 						<div class="testimonial-header">
@@ -154,8 +357,12 @@
 								<p class="testimonial-role">Celebrity Agency Inc</p>
 							</div>
 						</div>
-						<p class="testimonial-text">"I had the pleasure of working with Mr. Kumar. He is an incredibly talented Web Application Developer and video editor who dedicated his time and effort to creating my commercial videos."</p>
-						<div class="testimonial-stars">★★★★★</div>
+						<p class="text-gray-600">
+							"I had the pleasure of working with Mr. Kumar. He is an incredibly
+							talented Web Application Developer and video editor who dedicated
+							his time and effort to creating my commercial videos."
+						</p>
+						<div class="mt-4 text-yellow-400">★★★★★</div>
 					</div>
 					<div class="testimonial-card">
 						<div class="testimonial-header">
@@ -165,49 +372,99 @@
 								<p class="testimonial-role">Mercedes Benz, Germany</p>
 							</div>
 						</div>
-						<p class="testimonial-text">"He is very energetic, he knows his way around people, he is good with the clients, does whatever it takes to help colleagues and gets things done."</p>
-						<div class="testimonial-stars">★★★★★</div>
+						<p class="text-gray-600">
+							"He is very energetic, he knows his way around people, he is good
+							with the clients, does whatever it takes to help colleagues and
+							gets things done."
+						</p>
+						<div class="mt-4 text-yellow-400">★★★★★</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<section id="contact" class="contact-section">
-			<div class="contact-container">
-				<div class="contact-content">
-					<h2 class="contact-title">Let's Work Together</h2>
-					<form action="https://formspree.io/f/meogadvw" method="POST" class="contact-form">
-						<div class="form-group">
-							<label for="name" class="form-label">Name</label>
-							<input type="text" id="name" name="name" required class="form-input">
+		<section id="contact" class="py-24">
+			<div class="container mx-auto px-4">
+				<div class="max-w-2xl mx-auto">
+					<h2 class="text-3xl font-bold mb-12 text-center">
+						Let's Work Together
+					</h2>
+					<form
+						action="https://formspree.io/f/meogadvw"
+						method="POST"
+						class="space-y-6">
+						<div>
+							<label class="block text-sm font-medium text-gray-700 mb-2"
+								>Name</label
+							>
+							<input
+								type="text"
+								name="name"
+								required
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent" />
 						</div>
-						<div class="form-group">
-							<label for="email" class="form-label">Email</label>
-							<input type="email" id="email" name="email" required class="form-input">
+						<div>
+							<label class="block text-sm font-medium text-gray-700 mb-2"
+								>Email</label
+							>
+							<input
+								type="email"
+								name="email"
+								required
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent" />
 						</div>
-						<div class="form-group">
-							<label for="message" class="form-label">Message</label>
-							<textarea id="message" name="message" rows="4" required class="form-textarea"></textarea>
+						<div>
+							<label class="block text-sm font-medium text-gray-700 mb-2"
+								>Message</label
+							>
+							<textarea
+								name="message"
+								required
+								rows="4"
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent"></textarea>
 						</div>
-						<button type="submit" class="form-submit">Send Message</button>
+						<button
+							type="submit"
+							class="w-full bg-black text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors">
+							Send Message
+						</button>
 					</form>
 				</div>
 			</div>
 		</section>
-
-		<footer class="footer-section">
-			<div class="footer-container">
-				<div class="footer-content">
-					<h2 class="footer-title">MR. KUMAR</h2>
-					<p class="footer-subtitle">Freelance Web Developer & Video Editor</p>
-					<div class="footer-socials">
-						<a href="#" class="footer-social-link" title="YouTube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-						<a href="#" class="footer-social-link" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-						<a href="#" class="footer-social-link" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+		<footer class="bg-black text-white py-12">
+			<div class="container mx-auto px-4">
+				<div class="text-center">
+					<h2 class="text-2xl font-bold mb-4">MR. KUMAR</h2>
+					<p class="text-gray-400 mb-8">
+						Freelance Web Developer & Video Editor
+					</p>
+					<div class="flex justify-center gap-6 mb-8">
+						<a
+							href="#"
+							class="text-gray-400 hover:text-white transition-colors">
+							<i class="fab fa-youtube text-xl"></i>
+						</a>
+						<a
+							href="#"
+							class="text-gray-400 hover:text-white transition-colors">
+							<i class="fab fa-instagram text-xl"></i>
+						</a>
+						<a
+							href="#"
+							class="text-gray-400 hover:text-white transition-colors">
+							<i class="fab fa-facebook text-xl"></i>
+						</a>
 					</div>
-					<p class="footer-copyright">&copy; 2025 Mr. Kumar. All rights reserved.</p>
+					<p class="text-gray-400">
+						&copy; 2025 Mr. Kumar. All rights reserved.
+					</p>
 				</div>
 			</div>
 		</footer>
+		<script src="/js/script.js"></script>
+		<script type="module">
+			import * as UC from "https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@v1/web/file-uploader.min.js";
+			UC.defineComponents(UC);
+		</script>
 	</body>
 </html>
