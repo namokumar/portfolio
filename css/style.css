@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 :root {
     --primary: #18181b;
     --accent: #a855f7;
@@ -6,7 +7,7 @@
     --bg: #f8fafc;
     --radius: 18px;
 }
-	
+
 html {
     scroll-behavior: smooth;
 }
@@ -31,6 +32,7 @@ body {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -51,19 +53,22 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.5rem;
 }
+
 .portfolio-card {
     background: #fff;
     border-radius: var(--radius);
-    box-shadow: 0 2px 16px 0 rgba(0,0,0,0.04);
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.04);
     overflow: hidden;
     transition: transform 0.15s, box-shadow 0.15s;
     display: flex;
     flex-direction: column;
 }
+
 .portfolio-card:hover {
     transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 8px 32px 0 rgba(245,158,66,0.10);
+    box-shadow: 0 8px 32px 0 rgba(245, 158, 66, 0.10);
 }
+
 .portfolio-thumb {
     background: #f3e8ff;
     height: 180px;
@@ -73,20 +78,24 @@ body {
     font-size: 2.5rem;
     color: #a855f7;
 }
+
 .portfolio-content {
     padding: 1.5rem;
     flex: 1;
 }
+
 .portfolio-title {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
+
 .portfolio-desc {
     color: #444;
     font-size: 1rem;
     margin-bottom: 1rem;
 }
+
 .portfolio-link {
     color: #a855f7;
     text-decoration: none;
@@ -94,6 +103,7 @@ body {
     font-size: 1rem;
     transition: color 0.2s;
 }
+
 .portfolio-link:hover {
     color: #f59e42;
 }
@@ -102,47 +112,54 @@ body {
 
 /* Mobile menu styles for hamburger functionality */
 @media (max-width: 767px) {
-  header nav .hidden.md\:block {
-    display: none;
-  }
+    header nav .hidden.md\:block {
+        display: none;
+    }
 
-  body.menu-open header nav .hidden.md\:block {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 100%;
-    height: 70vh;
-    /* Match header background and blur */
-    background: #f8fafce8; /* Same as bg-white/90 */
-    backdrop-filter: blur(8px); /* Similar to backdrop-blur-sm */
-    -webkit-backdrop-filter: blur(8px);
-    box-shadow: -0.1 8px 32px 0 rgba(0,0,0,0.10);
-    z-index: 100;
-  }
-  body.menu-open header nav .hidden.md\:block ul {
-    flex-direction: column;
-    gap: 0;
-    padding: 1rem 0;
-    text-align: center;
-    background: transparent;
-  }
-  body.menu-open header nav .hidden.md\:block ul li {
-    margin: 0.5rem 0;
-    background: transparent;
-  }
-  body.menu-open header nav .hidden.md\:block ul li a {
-    display: block;
-    padding: 1rem 0;
-    color: var(--primary);
-    background: transparent;
-    font-size: 1.2rem;
-    font-weight: 600;
-    border-radius: 0;
-    transition: background 0.2s, color 0.2s;
-  }
-  body.menu-open header nav .hidden.md\:block ul li a:hover {
-    background: rgba(168,85,247,0.08); /* subtle accent on hover */
-    color: #a855f7;
-  }
+    body.menu-open header nav .hidden.md\:block {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 100%;
+        height: 70vh;
+        /* Match header background and blur */
+        background: #f8fafce8;
+        /* Same as bg-white/90 */
+        backdrop-filter: blur(8px);
+        /* Similar to backdrop-blur-sm */
+        -webkit-backdrop-filter: blur(8px);
+        box-shadow: -0.1 8px 32px 0 rgba(0, 0, 0, 0.10);
+        z-index: 100;
+    }
+
+    body.menu-open header nav .hidden.md\:block ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem 0;
+        text-align: center;
+        background: transparent;
+    }
+
+    body.menu-open header nav .hidden.md\:block ul li {
+        margin: 0.5rem 0;
+        background: transparent;
+    }
+
+    body.menu-open header nav .hidden.md\:block ul li a {
+        display: block;
+        padding: 1rem 0;
+        color: var(--primary);
+        background: transparent;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 0;
+        transition: background 0.2s, color 0.2s;
+    }
+
+    body.menu-open header nav .hidden.md\:block ul li a:hover {
+        background: rgba(168, 85, 247, 0.08);
+        /* subtle accent on hover */
+        color: #a855f7;
+    }
 }
