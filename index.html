@@ -5,14 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mr. Kumar | Freelance Web Developer & Video Editor</title>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Tailwind CSS -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<!-- Font Awesome -->
 		<link rel="stylesheet" href="css/style.css" />
+		<!-- Custom CSS -->
 	</head>
 	<body>
+		<!-- Header -->
 		<header
 			class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+			<!-- Logo and Navigation -->
 			<nav
 				class="container mx-auto px-4 py-4 flex justify-between items-center">
 				<div class="text-2xl font-bold tracking-tight">MR. KUMAR</div>
@@ -62,6 +67,7 @@
 			</nav>
 		</header>
 
+		<!-- Hero Section -->
 		<section
 			id="home"
 			class="min-h-screen flex items-center justify-center pt-20 relative"
@@ -102,6 +108,7 @@
 			</div>
 		</section>
 
+		<!--Experience Section-->
 		<section class="py-16 bg-gray-50">
 			<div class="container mx-auto px-4">
 				<div class="overflow-hidden">
@@ -116,6 +123,7 @@
 			</div>
 		</section>
 
+		<!-- About Section -->
 		<section id="about" class="py-24">
 			<div class="container mx-auto px-[19px]">
 				<div class="max-w-3xl mx-auto text-center">
@@ -137,6 +145,7 @@
 			</div>
 		</section>
 
+		<!-- Services Section -->
 		<section id="services" class="py-24 bg-gray-50">
 			<div class="container mx-auto px-4">
 				<h2 class="text-5xl font-bold mb-12 text-center">Services</h2>
@@ -185,86 +194,81 @@
 			</div>
 		</section>
 
-		<!-- PORTFOLIO -->
+		<!-- Portfolio Section -->
 		<section id="portfolio">
-			<h2 class="section-title">Portfolio</h2>
-			<div class="portfolio">
-				<div class="portfolio-card">
-					<div class="portfolio-thumb">🌐</div>
-					<div class="portfolio-content">
-						<div class="portfolio-title">AI Driven Web Development Company</div>
-						<div class="portfolio-desc">
-							A modern website for an AI-focused development company.
+			<div class="container mx-auto px-4">
+				<h2 class="text-5xl font-bold mb-12 text-center">Portfolio</h2>
+				<div class="portfolio">
+					<div class="portfolio-card">
+						<div class="portfolio-thumb">🧘‍♂️</div>
+						<div class="portfolio-content">
+							<div class="portfolio-title">Wellness Campaign Landing Page</div>
+							<div class="portfolio-desc">
+								A focused landing page for wellness and health campaigns.
+							</div>
+							<a
+								href="https://aasthawellness.netlify.app/"
+								class="portfolio-link"
+								target="_blank"
+								>View Project →</a
+							>
 						</div>
-						<a
-							href="https://www.growthloopstechnology.com/"
-							class="portfolio-link"
-							target="_blank"
-							>View Project →</a
-						>
 					</div>
-				</div>
-				<div class="portfolio-card">
-					<div class="portfolio-thumb">✈️</div>
-					<div class="portfolio-content">
-						<div class="portfolio-title">Travel Agency Website</div>
-						<div class="portfolio-desc">
-							A responsive travel agency platform for booking and exploring.
+					<div class="portfolio-card">
+						<div class="portfolio-thumb">✈️</div>
+						<div class="portfolio-content">
+							<div class="portfolio-title">Travel Agency Website</div>
+							<div class="portfolio-desc">
+								A responsive travel agency platform for booking and exploring.
+							</div>
+							<a
+								href="https://kumardevelops.github.io/nltravel/"
+								class="portfolio-link"
+								target="_blank"
+								>View Project →</a
+							>
 						</div>
-						<a
-							href="https://hellolalit.github.io/nltravel/"
-							class="portfolio-link"
-							target="_blank"
-							>View Project →</a
-						>
 					</div>
-				</div>
-				<div class="portfolio-card">
-					<div class="portfolio-thumb">💼</div>
-					<div class="portfolio-content">
-						<div class="portfolio-title">Commission Tracking Software</div>
-						<div class="portfolio-desc">
-							A comprehensive commission management solution for sales teams.
+					<div class="portfolio-card">
+						<div class="portfolio-thumb">💼</div>
+						<div class="portfolio-content">
+							<div class="portfolio-title">Commission Tracking Software</div>
+							<div class="portfolio-desc">
+								A comprehensive commission management solution for sales teams.
+							</div>
+							<a
+								href="https://kumardevelops.github.io/elevatehq/"
+								class="portfolio-link"
+								target="_blank"
+								>View Project →</a
+							>
 						</div>
-						<a
-							href="https://hellolalit.github.io/elevatehq/"
-							class="portfolio-link"
-							target="_blank"
-							>View Project →</a
-						>
-					</div>
-				</div>
-				<div class="portfolio-card">
-					<div class="portfolio-thumb">🧘‍♂️</div>
-					<div class="portfolio-content">
-						<div class="portfolio-title">Wellness Campaign Landing Page</div>
-						<div class="portfolio-desc">
-							A focused landing page for wellness and health campaigns.
-						</div>
-						<a
-							href="https://aasthawellness.netlify.app/"
-							class="portfolio-link"
-							target="_blank"
-							>View Project →</a
-						>
 					</div>
 				</div>
 			</div>
 		</section>
 
+		<!-- Testimonials Section -->
 		<section id="testimonials" class="py-24 bg-gray-50">
 			<div class="container mx-auto px-4">
 				<h2 class="text-5xl font-bold mb-12 text-center">
 					Client Testimonials
 				</h2>
+
+				<!-- Testimonials Carousel -->
 				<div class="grid md:grid-cols-3 gap-8">
 					<div class="bg-white p-8 rounded-lg shadow-sm">
 						<div class="flex items-center mb-4">
-							<div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+							<div class="w-14 h-14 bg-gray-200 rounded-full">
+								<img
+									src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/kantiDesign/kantiDesignlogo2_page-0001.jpg?updatedAt=1747642161665"
+									class="rounded-full" />
+							</div>
 							<div class="ml-4">
 								<h4 class="font-semibold">Alina Ostrovska</h4>
-								<p class="text-sm text-gray-600">
-									General Manager, Kanti Design
+								<p class="text-sm text-gray-600">General Manager</p>
+								<p class="text-sm text-gray-600 font-bold">
+									Kanti Design, Ukraine
 								</p>
 							</div>
 						</div>
@@ -274,33 +278,52 @@
 						</p>
 						<div class="mt-4 text-yellow-400">★★★★★</div>
 					</div>
+
 					<div class="bg-white p-8 rounded-lg shadow-sm">
 						<div class="flex items-center mb-4">
-							<div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+							<div class="w-14 h-14 bg-gray-200 rounded-full">
+								<img
+									src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/Mercedes/Mercedes-short.jpeg?updatedAt=1747642164611"
+									alt="Deloitte Logo"
+									class="rounded-full" />
+							</div>
 							<div class="ml-4">
-								<h4 class="font-semibold">Ryan Owen</h4>
-								<p class="text-sm text-gray-600">Celebrity Agency Inc</p>
+								<h4 class="font-semibold">Shuvam Aich</h4>
+								<p class="text-sm text-gray-600">Software Engineer,</p>
+								<p class="text-sm text-gray-600 font-bold">
+									Mercedes Benz, Germany
+								</p>
 							</div>
 						</div>
 						<p class="text-gray-600">
-							"I had the pleasure of working with Mr. Kumar. He is an incredibly
-							talented Web Application Developer and video editor who dedicated
-							his time and effort to creating my commercial videos."
+							"I had the pleasure of working with Mr. Kumar for six months. He
+							is very energetic, he knows his way around people, he is good with
+							the clients, does whatever it takes to help colleagues and gets
+							things done. I can gurantee that he will be an asset wherever he
+							goes."
 						</p>
 						<div class="mt-4 text-yellow-400">★★★★★</div>
 					</div>
+
 					<div class="bg-white p-8 rounded-lg shadow-sm">
 						<div class="flex items-center mb-4">
-							<div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+							<div class="w-14 h-14 bg-gray-200 rounded-full">
+								<img
+									src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/deloitte/Deloitte-black-Short.jpeg?updatedAt=1747642157960"
+									alt="Deloitte Logo"
+									class="rounded-full" />
+							</div>
 							<div class="ml-4">
-								<h4 class="font-semibold">Shuvam Aich</h4>
-								<p class="text-sm text-gray-600">Mercedes Benz, Germany</p>
+								<h4 class="font-semibold">Priyanka Karanam</h4>
+								<p class="text-sm text-gray-600">Senior Consultant,</p>
+								<p class="text-sm text-gray-700 font-bold">Deloitte, USI</p>
 							</div>
 						</div>
 						<p class="text-gray-600">
-							"He is very energetic, he knows his way around people, he is good
-							with the clients, does whatever it takes to help colleagues and
-							gets things done."
+							"It was great working with Mr. Kumar. He is always excited &
+							energetic and ready to take up the tasks coming his way and
+							deliver it on time. I hope he would be the great asset to the
+							organisation he works for. "
 						</p>
 						<div class="mt-4 text-yellow-400">★★★★★</div>
 					</div>
