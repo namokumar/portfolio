@@ -14,11 +14,12 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: var(--bg);
     color: var(--primary);
     margin: 0;
     padding: 0;
 }
+
+/* Experience Section */
 
 .logo-marquee {
     animation: scroll 30s linear infinite;
@@ -47,11 +48,18 @@ body {
     filter: grayscale(0%);
 }
 
+/* About Section */
+
+.about-section {
+    background: #fff;
+}
+
 /* PORTFOLIO */
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.5rem;
+    padding-bottom: 5rem;
 }
 
 .portfolio-card {
@@ -161,5 +169,10 @@ body {
         background: rgba(168, 85, 247, 0.08);
         /* subtle accent on hover */
         color: #a855f7;
+    }
+
+    .portfolio {
+        max-width: 90%x;
+        margin: 0 auto;
     }
 }
