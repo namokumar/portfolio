@@ -8,8 +8,11 @@
     --radius: 18px;
 }
 
+/* Smooth scrolling for better UX */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    /* Account for fixed header */
 }
 
 body {
@@ -17,6 +20,15 @@ body {
     color: var(--primary);
     margin: 0;
     padding: 0;
+}
+
+/* Enhanced focus states for accessibility */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+    outline: 2px solid #a855f7;
+    outline-offset: 2px;
 }
 
 /* Experience Section */
@@ -62,6 +74,12 @@ body {
     padding-bottom: 5rem;
 }
 
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2.5rem;
+}
+
 .portfolio-card {
     background: #fff;
     border-radius: var(--radius);
@@ -70,11 +88,37 @@ body {
     transition: transform 0.15s, box-shadow 0.15s;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.6s ease-out;
 }
 
 .portfolio-card:hover {
     transform: translateY(-4px) scale(1.03);
     box-shadow: 0 8px 32px 0 rgba(245, 158, 66, 0.10);
+}
+
+.portfolio-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.portfolio-card:hover::before {
+    left: 100%;
+}
+
+.portfolio-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.portfolio-card:nth-child(3) {
+    animation-delay: 0.2s;
 }
 
 .portfolio-thumb {
@@ -90,6 +134,9 @@ body {
 .portfolio-content {
     padding: 1.5rem;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .portfolio-title {
@@ -102,6 +149,22 @@ body {
     color: #444;
     font-size: 1rem;
     margin-bottom: 1rem;
+}
+
+.portfolio-tech {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.tech-tag {
+    background: #a855f7;
+    color: #fff;
+    border-radius: 999px;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .portfolio-link {
@@ -120,6 +183,17 @@ body {
 
 /* Mobile menu styles for hamburger functionality */
 @media (max-width: 767px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .portfolio-thumb {
+        height: 120px;
+        font-size: 2rem;
+    }
+
+    /* Mobile menu improvements */
     header nav .hidden.md\:block {
         display: none;
     }
@@ -131,14 +205,24 @@ body {
         left: 0;
         min-width: 100%;
         height: 70vh;
-        /* Match header background and blur */
         background: #f8fafce8;
-        /* Same as bg-white/90 */
         backdrop-filter: blur(8px);
-        /* Similar to backdrop-blur-sm */
         -webkit-backdrop-filter: blur(8px);
-        box-shadow: -0.1 8px 32px 0 rgba(0, 0, 0, 0.10);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.10);
         z-index: 100;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     body.menu-open header nav .hidden.md\:block ul {
@@ -167,12 +251,25 @@ body {
 
     body.menu-open header nav .hidden.md\:block ul li a:hover {
         background: rgba(168, 85, 247, 0.08);
-        /* subtle accent on hover */
         color: #a855f7;
     }
 
     .portfolio {
-        max-width: 90%x;
+        max-width: 90%;
         margin: 0 auto;
+    }
+}
+
+
+/* Loading animation for portfolio cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
