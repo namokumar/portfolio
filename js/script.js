@@ -17,3 +17,22 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Infinite logo marquee functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const marquee = document.querySelector('.logo-marquee');
+    if (marquee) {
+        // Clone all items to create a seamless loop
+        const originalItems = marquee.querySelectorAll('.logo-item');
+        originalItems.forEach(item => {
+            const clone = item.cloneNode(true);
+            marquee.appendChild(clone);
+        });
+
+        // To make it extra smooth, we can even add a second copy
+        originalItems.forEach(item => {
+            const clone = item.cloneNode(true);
+            marquee.appendChild(clone);
+        });
+    }
+});
