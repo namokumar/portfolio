@@ -76,7 +76,7 @@ textarea:focus {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
 }
 
@@ -181,8 +181,21 @@ textarea:focus {
 
 /* Media Queries */
 
+@media (max-width: 1023px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Mobile menu styles for hamburger functionality */
 @media (max-width: 767px) {
+
+    .portfolio {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+
     .portfolio-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
