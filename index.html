@@ -101,11 +101,19 @@
 					online with mobile-first, high-converting websites intregrated with
 					deticated support and creative viral video content.
 				</p>
-				<a
-					href="#contact"
-					class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-colors">
-					Schedule a Call
-				</a>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+					<a
+						href="#contact"
+						class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-colors">
+						Schedule a Call
+					</a>
+					<a
+						href="#contact"
+						data-resume-download
+						class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-colors">
+						📄 Download Resume
+					</a>
+				</div>
 			</div>
 		</section>
 
@@ -212,23 +220,92 @@
 		</section>
 
 		<!-- About Section -->
-		<section id="about" class="py-24 .about-section">
-			<div class="container mx-auto px-[19px]">
-				<div class="max-w-3xl mx-auto text-center">
-					<h2 class="text-5xl font-bold mb-6">About</h2>
-					<p class="text-lg text-gray-600 leading-relaxed">
-						Hi, I'm Mr. Kumar, a freelance Web Developer & Video Editor helping
-						small businesses go online with mobile-first, high-converting
-						websites and creative video content. I specialize in helping small
-						business in building a powerful yet impactful online presence by
-						leveraging clean, fast, and mobile-first websites and engaging viral
-						video content that help small businesses establish their online
-						presence. With expertise in HTML, CSS, Responsive Design, mordern
-						JavaScript, and video editing, I focus on delivering best solutions
-						that work seamlessly across all devices while maintaining a best
-						aesthetic that puts your content first with clear CTAs and focus on
-						boosing your business growth.
-					</p>
+		<section id="about" class="py-24 about-section relative overflow-hidden">
+			<!-- Animated Background Blobs -->
+			<div class="absolute inset-0 overflow-hidden pointer-events-none">
+				<div class="blob blob-1"></div>
+				<div class="blob blob-2"></div>
+				<div class="blob blob-3"></div>
+			</div>
+			
+			<div class="container mx-auto px-4 relative z-10">
+				<div class="max-w-6xl mx-auto">
+					<!-- Section Header -->
+					<div class="text-center mb-16">
+						<h2 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
+							About Me
+						</h2>
+						<div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-orange-500 mx-auto rounded-full"></div>
+					</div>
+					
+					<!-- Main Content Grid -->
+					<div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+						<!-- Profile Image Section -->
+						<div class="order-2 lg:order-1 relative">
+							<div class="profile-image-container">
+								<div class="profile-image-blob">
+									<img src="./assets/img/self.jpg" alt="Mr. Kumar - Web Developer & Video Editor" class="profile-image">
+								</div>
+								<!-- Floating Elements -->
+								<div class="floating-element floating-1">
+									<div class="floating-icon">💻</div>
+								</div>
+								<div class="floating-element floating-2">
+									<div class="floating-icon">🎬</div>
+								</div>
+								<div class="floating-element floating-3">
+									<div class="floating-icon">🚀</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Content Section -->
+						<div class="order-1 lg:order-2">
+							<div class="about-content">
+								<h3 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+									Hi, I'm <span class="text-purple-600">Mr. Kumar</span>
+								</h3>
+								<p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
+									A passionate freelance <strong class="text-purple-600">Web Developer</strong> & <strong class="text-orange-500">Video Editor</strong> helping
+									small businesses go online with mobile-first, high-converting
+									websites and creative video content.
+								</p>
+								<p class="text-lg text-gray-600 leading-relaxed mb-8">
+									I specialize in helping small businesses build a powerful yet impactful online presence by
+									leveraging clean, fast, and mobile-first websites and engaging viral
+									video content that helps establish their online presence. With expertise in HTML, CSS, Responsive Design, modern
+									JavaScript, and video editing, I focus on delivering the best solutions
+									that work seamlessly across all devices while maintaining aesthetic excellence that puts your content first with clear CTAs and focus on
+									boosting your business growth.
+								</p>
+								
+								<!-- Skills Tags -->
+								<div class="skills-tags mb-8">
+									<span class="skill-tag">HTML5</span>
+									<span class="skill-tag">CSS3</span>
+									<span class="skill-tag">JavaScript</span>
+									<span class="skill-tag">Responsive Design</span>
+									<span class="skill-tag">Video Editing</span>
+									<span class="skill-tag">DaVinci Resolve</span>
+								</div>
+								
+								<!-- CTA Button -->
+								<div class="flex flex-col sm:flex-row gap-4">
+									<a
+										href="#contact"
+										data-resume-download
+										class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">
+										Know More
+									</a>
+									<a
+										href="#portfolio"
+										class="inline-block border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-full text-lg font-medium hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:scale-105">
+										View Portfolio
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -281,6 +358,14 @@
 							more.
 						</p>
 					</div>
+				</div>
+				<div class="text-center mt-12">
+					<a
+						href="#contact"
+						data-resume-download
+						class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-colors">
+						📄 Download Resume & Get Started
+					</a>
 				</div>
 			</div>
 		</section>
@@ -661,34 +746,166 @@
 						action="https://formspree.io/f/meogadvw"
 						method="POST"
 						class="space-y-6">
+						<div class="grid md:grid-cols-2 gap-6">
+							<div>
+								<label class="block text-sm font-medium text-gray-700 mb-2"
+									>Name *</label
+								>
+								<input
+									type="text"
+									name="name"
+									required
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
+							</div>
+							<div>
+								<label class="block text-sm font-medium text-gray-700 mb-2"
+									>Phone Number *</label
+								>
+								<input
+									type="tel"
+									name="phone"
+									required
+									placeholder="+1 9876543210 (with country code)"
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
+							</div>
+						</div>
+						<div class="grid md:grid-cols-2 gap-6">
+							<div>
+								<label class="block text-sm font-medium text-gray-700 mb-2"
+									>Email *</label
+								>
+								<input
+									type="email"
+									name="email"
+									required
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
+							</div>
+							<div>
+								<label class="block text-sm font-medium text-gray-700 mb-2"
+									>Country *</label
+								>
+								<select
+									name="country"
+									required
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+									<option value="">Select your country</option>
+									<option value="India">India</option>
+									<option value="United States">United States</option>
+									<option value="Canada">Canada</option>
+									<option value="United Kingdom">United Kingdom</option>
+									<option value="Australia">Australia</option>
+									<option value="Germany">Germany</option>
+									<option value="France">France</option>
+									<option value="Netherlands">Netherlands</option>
+									<option value="Singapore">Singapore</option>
+									<option value="UAE">UAE</option>
+									<option value="Other">Other</option>
+								</select>
+							</div>
+						</div>
 						<div>
 							<label class="block text-sm font-medium text-gray-700 mb-2"
-								>Name</label
+								>Company/Organization</label
 							>
 							<input
 								type="text"
-								name="name"
-								required
+								name="company"
+								placeholder="Your company name (optional)"
 								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
 						</div>
 						<div>
 							<label class="block text-sm font-medium text-gray-700 mb-2"
-								>Email</label
+								>Purpose of Contact *</label
+							>
+							<select
+								name="purpose"
+								id="purpose"
+								required
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+								<option value="">Select purpose</option>
+								<option value="Web Development">Web Development Project</option>
+								<option value="Video Editing">Video Editing Project</option>
+								<option value="Website Redesign">Website Redesign</option>
+								<option value="Freelance Project">Freelance Project</option>
+								<option value="Contract Based Project">Contract Based Project</option>
+								<option value="Contract to Hire (CTH)">Contract to Hire (CTH) Project</option>
+								<option value="Resume Download">Resume Download</option>
+								<option value="Consultation">Consultation</option>
+								<option value="Partnership">Partnership Opportunity</option>
+								<option value="Job Opportunity">Job Opportunity</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+						<div id="other-purpose" class="hidden">
+							<label class="block text-sm font-medium text-gray-700 mb-2"
+								>Please specify *</label
 							>
 							<input
-								type="email"
-								name="email"
-								required
+								type="text"
+								name="other_purpose"
+								placeholder="Please describe your specific need"
 								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
+						</div>
+						<div class="grid md:grid-cols-2 gap-6">
+							<div>
+								<label class="block text-sm font-medium text-gray-700 mb-2"
+									>Budget Range</label
+								>
+								<select
+									name="budget"
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+									<option value="">Select budget range</option>
+									<option value="Under $500">Under $500</option>
+									<option value="$500 - $1,000">$500 - $1,000</option>
+									<option value="$1,000 - $2,500">$1,000 - $2,500</option>
+									<option value="$2,500 - $5,000">$2,500 - $5,000</option>
+									<option value="$5,000 - $10,000">$5,000 - $10,000</option>
+									<option value="Over $10,000">Over $10,000</option>
+									<option value="To be discussed">To be discussed</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-sm font-medium text-gray-700 mb-2"
+									>Timeline</label
+								>
+								<select
+									name="timeline"
+									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+									<option value="">Select timeline</option>
+									<option value="ASAP">ASAP</option>
+									<option value="1-2 weeks">1-2 weeks</option>
+									<option value="1 month">1 month</option>
+									<option value="2-3 months">2-3 months</option>
+									<option value="3+ months">3+ months</option>
+									<option value="No specific deadline">No specific deadline</option>
+								</select>
+							</div>
 						</div>
 						<div>
 							<label class="block text-sm font-medium text-gray-700 mb-2"
-								>Message</label
+								>How did you find me?</label
+							>
+							<select
+								name="referral"
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+								<option value="">Select option</option>
+								<option value="Google Search">Google Search</option>
+								<option value="Social Media">Social Media</option>
+								<option value="Referral">Referral</option>
+								<option value="Portfolio">Portfolio</option>
+								<option value="LinkedIn">LinkedIn</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+						<div>
+							<label class="block text-sm font-medium text-gray-700 mb-2"
+								>Message *</label
 							>
 							<textarea
 								name="message"
 								required
 								rows="4"
+								placeholder="Tell me about your project, requirements, and any specific details..."
 								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 resize-none"></textarea>
 						</div>
 						<button
@@ -707,9 +924,9 @@
 					<h2 class="text-2xl font-bold mb-6">MR. KUMAR</h2>
 					<p class="text-gray-400 mb-8">
 						Freelance Web Developer & Video Editor, <br />
-						<a href="mailto:namastemrkumar@protonmail.com">
+						<a href="mailto:info@namokumar.com">
 							<i class="fa-duotone fa-solid fa-envelope"> </i>
-							namastemrkumar@protonmail.com
+							info@namokumar.com
 						</a>
 					</p>
 
