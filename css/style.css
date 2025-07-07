@@ -125,7 +125,7 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .profile-image-blob {
@@ -133,7 +133,7 @@ textarea:focus {
     width: 350px;
     height: 350px;
     background: linear-gradient(135deg, #a855f7, #f59e0b);
-    border-radius: 50%;
+    border-radius: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,7 +145,7 @@ textarea:focus {
 .profile-image {
     width: 320px;
     height: 320px;
-    border-radius: 50%;
+    border-radius: 5%;
     object-fit: cover;
     border: 8px solid white;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -533,5 +533,30 @@ textarea:focus {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments for About Me heading blob */
+@media (max-width: 1024px) {
+    .about-section .blob-1 {
+        width: 200px !important;
+        height: 200px !important;
+        top: 40px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section .blob-1 {
+        width: 120px !important;
+        height: 120px !important;
+        top: 30px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section .blob-1 {
+        width: 80px !important;
+        height: 80px !important;
+        top: 20px !important;
     }
 }

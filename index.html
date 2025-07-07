@@ -1,77 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Mr. Kumar | Freelance Web Developer & Video Editor</title>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<!-- Tailwind CSS -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="css/style.css" />
-		<!-- Custom CSS -->
-	</head>
-	<body>
-		<!-- Header -->
-		<header
-			class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
-			<!-- Logo and Navigation -->
-			<nav
-				class="container mx-auto px-4 py-4 flex justify-between items-center">
-				<div class="text-2xl font-bold tracking-tight">MR. KUMAR</div>
-				<!-- Hamburger menu button for mobile/tablet -->
-				<button
-					id="menu-toggle"
-					class="md:hidden text-2xl p-2"
-					aria-label="Open Menu">
-					<i class="fas fa-bars"></i>
-				</button>
-				<div class="hidden md:block">
-					<ul class="flex gap-8">
-						<li>
-							<a href="#home" class="hover:text-gray-600 transition-colors"
-								>Home</a
-							>
-						</li>
-						<li>
-							<a href="#about" class="hover:text-gray-600 transition-colors"
-								>About</a
-							>
-						</li>
-						<li>
-							<a href="#services" class="hover:text-gray-600 transition-colors"
-								>Services</a
-							>
-						</li>
-						<li>
-							<a href="#portfolio" class="hover:text-gray-600 transition-colors"
-								>Portfolio</a
-							>
-						</li>
-						<li>
-							<a
-								href="#testimonials"
-								class="hover:text-gray-600 transition-colors"
-								>Testimonials</a
-							>
-						</li>
-						<li>
-							<a href="#contact" class="hover:text-gray-600 transition-colors"
-								>Contact</a
-							>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
 
-		<!-- Hero Section -->
-		<section
-			id="home"
-			class="min-h-screen flex items-center justify-center relative"
-			style="
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mr. Kumar | Freelance Web Developer & Video Editor</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- Tailwind CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Custom CSS -->
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+		<!-- Logo and Navigation -->
+		<nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+			<div class="text-2xl font-bold tracking-tight">MR. KUMAR</div>
+			<!-- Hamburger menu button for mobile/tablet -->
+			<button id="menu-toggle" class="md:hidden text-2xl p-2" aria-label="Open Menu">
+				<i class="fas fa-bars"></i>
+			</button>
+			<div class="hidden md:block">
+				<ul class="flex gap-8">
+					<li>
+						<a href="#home" class="hover:text-gray-600 transition-colors">Home</a>
+					</li>
+					<li>
+						<a href="#about" class="hover:text-gray-600 transition-colors">About</a>
+					</li>
+					<li>
+						<a href="#services" class="hover:text-gray-600 transition-colors">Services</a>
+					</li>
+					<li>
+						<a href="#portfolio" class="hover:text-gray-600 transition-colors">Portfolio</a>
+					</li>
+					<li>
+						<a href="#testimonials" class="hover:text-gray-600 transition-colors">Testimonials</a>
+					</li>
+					<li>
+						<a href="#contact" class="hover:text-gray-600 transition-colors">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Hero Section -->
+	<section id="home" class="min-h-screen flex items-center justify-center relative" style="
 				background: linear-gradient(
 					120deg,
 					#f8fafc 0%,
@@ -79,68 +57,61 @@
 					#ffe7d1 100%
 				);
 			">
-			<!--Blobs-->
-			<div class="absolute inset-0 pointer-events-none">
-				<div
-					class="w-96 h-96 bg-gradient-to-tr from-purple-300 via-pink-200 to-yellow-100 rounded-full blur-3xl opacity-60 absolute -top-32 -left-32"></div>
-				<div
-					class="w-96 h-96 bg-gradient-to-tr from-yellow-200 via-pink-100 to-purple-200 rounded-full blur-3xl opacity-60 absolute bottom-0 right-0"></div>
+		<!--Blobs-->
+		<div class="absolute inset-0 pointer-events-none">
+			<div
+				class="w-96 h-96 bg-gradient-to-tr from-purple-300 via-pink-200 to-yellow-100 rounded-full blur-3xl opacity-60 absolute -top-32 -left-32">
 			</div>
-
-			<!-- Hero Content Start -->
-			<div class="container mx-auto px-12 py-10 text-center relative z-1">
-				<h2
-					class="text-5xl md:text-5xl sm:text-3xl font-bold mt-10 mb-3 pb-4 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent drop-shadow-lg leading-16">
-					Crafting Digital Experiences
-				</h2>
-				<p
-					class="text-sm md:text-md sm:text-[18px] text-gray-700 mb-8 max-w-2xl sm:max-w-md mx-auto drop-shadow-sm">
-					Hi <i class="fa-sharp fa-solid fa-hands-praying"></i>, &nbsp; I'm Mr.
-					Kumar, a freelance Web Application Developer, Video Editor &
-					Teachnical Support Engineer helping small-medium (SME) businesses go
-					online with mobile-first, high-converting websites intregrated with
-					deticated support and creative viral video content.
-				</p>
-				<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-					<a
-						href="#contact"
-						class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-colors">
-						Schedule a Call
-					</a>
-					<a
-						href="#contact"
-						data-resume-download
-						class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-colors">
-						📄 Download Resume
-					</a>
-				</div>
+			<div
+				class="w-96 h-96 bg-gradient-to-tr from-yellow-200 via-pink-100 to-purple-200 rounded-full blur-3xl opacity-60 absolute bottom-0 right-0">
 			</div>
-		</section>
+		</div>
 
-		<!-- Experience Section -->
-		<section class="py-12 bg-purple-200">
-			<div class="container mx-auto px-4">
-				<!--Logos Container Starting-->
-				<div class="overflow-hidden mt-1 p-2">
-					<div class="logo-marquee flex gap-16 items-center">
-						<div class="logo-item flex-shrink-0">
-							<!--Amazon-->
-							<img
-								src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/deloitte/Deloitte_dark.png?updatedAt=1747642157467"
-								alt="Upwork Logo"
-								class="h-7 w-auto"
-								srcset="
+		<!-- Hero Content Start -->
+		<div class="container mx-auto px-12 py-10 text-center relative z-1">
+			<h2
+				class="text-5xl md:text-5xl sm:text-3xl font-bold mt-10 mb-3 pb-4 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent drop-shadow-lg leading-16">
+				Crafting Digital Experiences
+			</h2>
+			<p
+				class="text-sm md:text-md sm:text-[18px] text-gray-700 mb-8 max-w-2xl sm:max-w-md mx-auto drop-shadow-sm">
+				Hi <i class="fa-sharp fa-solid fa-hands-praying"></i>, &nbsp; I'm Mr.
+				Kumar, a freelance Web Application Developer, Video Editor &
+				Teachnical Support Engineer helping small-medium (SME) businesses go
+				online with mobile-first, high-converting websites intregrated with
+				deticated support and creative viral video content.
+			</p>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+				<a href="#contact"
+					class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-colors">
+					Schedule a Call
+				</a>
+				<a href="#contact" data-resume-download
+					class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-colors">
+					📄 Download Resume
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Experience Section -->
+	<section class="py-12 bg-purple-200">
+		<div class="container mx-auto px-4">
+			<!--Logos Container Starting-->
+			<div class="overflow-hidden mt-1 p-2">
+				<div class="logo-marquee flex gap-16 items-center">
+					<div class="logo-item flex-shrink-0">
+						<!--Amazon-->
+						<img src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/deloitte/Deloitte_dark.png?updatedAt=1747642157467"
+							alt="Upwork Logo" class="h-7 w-auto" srcset="
 									https://https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/deloitte/Deloitte_dark.png?updatedAt=1747642157467?updatedAt=1747642154750?tr=w-400  400w,
 									https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/deloitte/Deloitte_dark.png?updatedAt=1747642157467?updatedAt=1747642154750?tr=w-800          800w,
 									https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/deloitte/Deloitte_dark.png?updatedAt=1747642157467?updatedAt=1747642154750?tr=w-1200        1200w
-								"
-								sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px, 1200px"
-								alt="Deloitte Logo" />
-						</div>
+								" sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px, 1200px" alt="Deloitte Logo" />
+					</div>
 
-						<div class="logo-item flex-shrink-0">
-							<img
-							src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/upwork/dark/Upwork_Logo_1.png?updatedAt=1747642168161"
+					<div class="logo-item flex-shrink-0">
+						<img src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/upwork/dark/Upwork_Logo_1.png?updatedAt=1747642168161"
 							alt="Upwork Logo" class="h-10" w-auto" srcset="
 							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/upwork/dark/Upwork_Logo_1.png?updatedAt=1747642168161?tr=w-400
 							400w,
@@ -149,11 +120,10 @@
 							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/upwork/dark/Upwork_Logo_1.png?updatedAt=1747642168161?tr=w-1200
 							1200w" sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,
 							1200px" alt="Upwork Logo" />
-						</div>
+					</div>
 
-						<div class="logo-item flex-shrink-0">
-							<img
-							src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_1.png?updatedAt=1747642153964"
+					<div class="logo-item flex-shrink-0">
+						<img src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_1.png?updatedAt=1747642153964"
 							alt="Upwork Logo" class="h-10" w-auto" srcset="
 							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_1.png?updatedAt=1747642153964?tr=w-400
 							400w,
@@ -162,11 +132,10 @@
 							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/amazon/Amazon-dark/Amazon_Logo_1.png?updatedAt=1747642153964?tr=w-1200
 							1200w" sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,
 							1200px" alt="Amazon Logo" />
-						</div>
+					</div>
 
-						<div class="logo-item flex-shrink-0">
-							<img
-							src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/gurucul/Gurucul.png?updatedAt=1747642159024?updatedAt=1747642154750"
+					<div class="logo-item flex-shrink-0">
+						<img src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/gurucul/Gurucul.png?updatedAt=1747642159024?updatedAt=1747642154750"
 							alt="Upwork Logo" class="h-7" w-auto" srcset="
 							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/gurucul/Gurucul.png?updatedAt=1747642159024?updatedAt=1747642154750?tr=w-400
 							400w,
@@ -175,10 +144,9 @@
 							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/gurucul/Gurucul.png?updatedAt=1747642159024?updatedAt=1747642154750?tr=w-1200
 							1200w" sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,
 							1200px" alt="Gurucul Logo" />
-						</div>
-						<div class="logo-item flex-shrink-0">
-							<img
-							src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/kantiDesign/kantiDesignlogo2_page-0001.jpg?updatedAt=1747642161665"
+					</div>
+					<div class="logo-item flex-shrink-0">
+						<img src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/kantiDesign/kantiDesignlogo2_page-0001.jpg?updatedAt=1747642161665"
 							alt="Upwork Logo" class="h-16" w-auto" srcset="
 							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/kantiDesign/kantiDesignlogo2_page-0001.jpg?updatedAt=1747642161665?tr=w-400
 							400w,
@@ -187,11 +155,10 @@
 							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/kantiDesign/kantiDesignlogo2_page-0001.jpg?updatedAt=1747642161665?tr=w-1200
 							1200w" sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,
 							1200px" alt="Amazon Logo" />
-						</div>
+					</div>
 
-						<div class="logo-item flex-shrink-0">
-							<img
-							src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/teleperformance/Teleperformance%20Group-dark/Teleperformance%20Group_id6PwlwwiL_0.svg?updatedAt=1747642165499"
+					<div class="logo-item flex-shrink-0">
+						<img src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/teleperformance/Teleperformance%20Group-dark/Teleperformance%20Group_id6PwlwwiL_0.svg?updatedAt=1747642165499"
 							alt="Upwork Logo" class="h-8" w-auto" srcset="
 							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/teleperformance/Teleperformance%20Group-dark/Teleperformance%20Group_id6PwlwwiL_0.svg?updatedAt=1747642165499?tr=w-400
 							400w,
@@ -200,10 +167,9 @@
 							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/teleperformance/Teleperformance%20Group-dark/Teleperformance%20Group_id6PwlwwiL_0.svg?updatedAt=1747642165499?tr=w-1200
 							1200w" sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,
 							1200px" alt="TP Logo" />
-						</div>
-						<div class="logo-item flex-shrink-0">
-							<img
-							src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/HSBEngineering/HSB-darkcropped.jpeg?updatedAt=1747756160770"
+					</div>
+					<div class="logo-item flex-shrink-0">
+						<img src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/HSBEngineering/HSB-darkcropped.jpeg?updatedAt=1747756160770"
 							alt="Upwork Logo" class="h-14" w-auto" srcset="
 							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/HSBEngineering/HSB-darkcropped.jpeg?updatedAt=1747756160770?tr=w-400
 							400w,
@@ -212,725 +178,663 @@
 							https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/HSBEngineering/HSB-darkcropped.jpeg?updatedAt=1747756160770?tr=w-1200
 							1200w" sizes="(max-width: 600px) 400px, (max-width: 1024px) 800px,
 							1200px" alt="HSB Logo" />
-						</div>
 					</div>
-					<!-- Add more logos as needed -->
 				</div>
+				<!-- Add more logos as needed -->
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- About Section -->
-		<section id="about" class="py-24 about-section relative overflow-hidden">
-			<!-- Animated Background Blobs -->
-			<div class="absolute inset-0 overflow-hidden pointer-events-none">
-				<div class="blob blob-1"></div>
-				<div class="blob blob-2"></div>
-				<div class="blob blob-3"></div>
-			</div>
-			
-			<div class="container mx-auto px-4 relative z-10">
-				<div class="max-w-6xl mx-auto">
-					<!-- Section Header -->
-					<div class="text-center mb-16">
-						<h2 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
-							About Me
-						</h2>
-						<div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-orange-500 mx-auto rounded-full"></div>
-					</div>
-					
-					<!-- Main Content Grid -->
-					<div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-						<!-- Profile Image Section -->
-						<div class="order-2 lg:order-1 relative">
-							<div class="profile-image-container">
-								<div class="profile-image-blob">
-									<img src="./assets/img/self.jpg" alt="Mr. Kumar - Web Developer & Video Editor" class="profile-image">
-								</div>
-								<!-- Floating Elements -->
-								<div class="floating-element floating-1">
-									<div class="floating-icon">💻</div>
-								</div>
-								<div class="floating-element floating-2">
-									<div class="floating-icon">🎬</div>
-								</div>
-								<div class="floating-element floating-3">
-									<div class="floating-icon">🚀</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Content Section -->
-						<div class="order-1 lg:order-2">
-							<div class="about-content">
-								<h3 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
-									Hi, I'm <span class="text-purple-600">Mr. Kumar</span>
-								</h3>
-								<p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
-									A passionate freelance <strong class="text-purple-600">Web Developer</strong> & <strong class="text-orange-500">Video Editor</strong> helping
-									small businesses go online with mobile-first, high-converting
-									websites and creative video content.
-								</p>
-								<p class="text-lg text-gray-600 leading-relaxed mb-8">
-									I specialize in helping small businesses build a powerful yet impactful online presence by
-									leveraging clean, fast, and mobile-first websites and engaging viral
-									video content that helps establish their online presence. With expertise in HTML, CSS, Responsive Design, modern
-									JavaScript, and video editing, I focus on delivering the best solutions
-									that work seamlessly across all devices while maintaining aesthetic excellence that puts your content first with clear CTAs and focus on
-									boosting your business growth.
-								</p>
-								
-								<!-- Skills Tags -->
-								<div class="skills-tags mb-8">
-									<span class="skill-tag">HTML5</span>
-									<span class="skill-tag">CSS3</span>
-									<span class="skill-tag">JavaScript</span>
-									<span class="skill-tag">Responsive Design</span>
-									<span class="skill-tag">Video Editing</span>
-									<span class="skill-tag">DaVinci Resolve</span>
-								</div>
-								
-								<!-- CTA Button -->
-								<div class="flex flex-col sm:flex-row gap-4">
-									<a
-										href="#contact"
-										data-resume-download
-										class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">
-										Know More
-									</a>
-									<a
-										href="#portfolio"
-										class="inline-block border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-full text-lg font-medium hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:scale-105">
-										View Portfolio
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+	<!-- About Section -->
+	<section id="about" class="py-24 about-section relative overflow-hidden">
+		<!-- Animated Background Blobs -->
+		<div class="absolute inset-0 overflow-hidden pointer-events-none">
+			<!-- Move blob-1 under the About Me heading -->
+		</div>
 
-		<!-- Services Section -->
-		<section id="services" class="py-24 bg-gray-200">
-			<div class="container mx-auto px-4">
-				<h2 class="text-5xl font-bold mb-12 text-center">Services</h2>
-				<div class="grid md:grid-cols-3 gap-8">
-					<div class="bg-white p-8 rounded-lg shadow-sm">
-						<div
-							class="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-6">
-							<i class="fa-solid fa-mobile fa-xl" style="color: #ffffff"></i>
-						</div>
-						<h3 class="text-xl font-semibold mb-4">Mobile-First Design</h3>
-						<p class="text-gray-600">
-							Responsive, fast, and beautiful websites optimized for mobile
-							devices that look perfect on any device. Built from scratch for
-							your business goals, ensuring a pixel perfect, ultra fast
-							experience across all screen sizes.
-						</p>
-					</div>
-					<div
-						class="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
-						<div
-							class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mb-6">
-							<i class="fas fa-code text-white text-xl"></i>
-						</div>
-						<h3 class="text-xl font-semibold mb-4">Custom Development</h3>
-						<p class="text-gray-600">
-							Clean, hand-coded solutions tailored to your specific business
-							needs and goals. Mainly focusing on performance, SEO and best user
-							experience. Either you need a simple landing page or a complex web
-							application, We offer best solutions that perfectly suits your
-							business goals.
-						</p>
-					</div>
-					<div
-						class="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
-						<div
-							class="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center mb-6">
-							<i class="fas fa-video text-white text-xl"></i>
-						</div>
-						<h3 class="text-xl font-semibold mb-4">Video Editing</h3>
-						<p class="text-gray-600">
-							Professional editing services for Promos, Reels, YouTube Shorts,
-							Podcasts, Travel Videos, Documentaries, Testimonials & more.
-							Edited using DaVinci Resolve and Adobe Premiere Pro with cinematic
-							cuts, color correction, storytelling, and premium transitions and
-							more.
-						</p>
-					</div>
-				</div>
-				<div class="text-center mt-12">
-					<a
-						href="#contact"
-						data-resume-download
-						class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-colors">
-						📄 Download Resume & Get Started
-					</a>
-				</div>
-			</div>
-		</section>
-
-		<!-- Portfolio Section -->
-		<section id="portfolio" class="py-24 bg-gray-50">
-			<div class="container mx-auto px-4">
-				<h2 class="text-5xl font-bold mb-12 text-center">Portfolio</h2>
-
-				<!-- Web Projects -->
-				<h3
-					class="text-2xl font-semibold mb-6 mt-10 text-purple-700 flex items-center">
-					<i class="fas fa-code mr-3"></i>Web Development Projects
-				</h3>
-				<div class="portfolio portfolio-grid mb-16">
-					<div class="portfolio-card" data-category="web">
-						<div class="portfolio-thumb bg-purple-100">🧘‍♂️</div>
-						<div class="portfolio-content">
-							<div class="portfolio-title">Wellness Campaign Landing Page</div>
-							<div class="portfolio-desc">
-								A focused landing page for wellness and health campaigns with
-								mobile-first design and high conversion optimization.
-							</div>
-							<div class="portfolio-tech">
-								<span class="tech-tag">HTML</span>
-								<span class="tech-tag">CSS</span>
-								<span class="tech-tag">JavaScript</span>
-								<span class="tech-tag">Responsive</span>
-							</div>
-							<a
-								href="https://aasthawellness.info/"
-								class="portfolio-link"
-								target="_blank"
-								>View Project →</a
-							>
-						</div>
-					</div>
-					<div class="portfolio-card" data-category="web">
-						<div class="portfolio-thumb bg-yellow-100">✈️</div>
-						<div class="portfolio-content">
-							<div class="portfolio-title">Travel Agency Website</div>
-							<div class="portfolio-desc">
-								A responsive travel agency platform for booking and exploring
-								destinations with modern UI/UX design.
-							</div>
-							<div class="portfolio-tech">
-								<span class="tech-tag">HTML</span>
-								<span class="tech-tag">CSS</span>
-								<span class="tech-tag">JavaScript</span>
-								<span class="tech-tag">Bootstrap</span>
-							</div>
-							<a
-								href="https://kumardevelops.github.io/nltravel/"
-								class="portfolio-link"
-								target="_blank"
-								>View Project →</a
-							>
-						</div>
-					</div>
-					<div class="portfolio-card" data-category="web">
-						<div class="portfolio-thumb bg-pink-100">💼</div>
-						<div class="portfolio-content">
-							<div class="portfolio-title">Commission Tracking Software</div>
-							<div class="portfolio-desc">
-								A comprehensive commission management solution for sales teams
-								with real-time tracking and reporting.
-							</div>
-							<div class="portfolio-tech">
-								<span class="tech-tag">HTML</span>
-								<span class="tech-tag">CSS</span>
-								<span class="tech-tag">JavaScript</span>
-								<span class="tech-tag">Dashboard</span>
-							</div>
-							<a
-								href="https://kumardevelops.github.io/elevatehq/"
-								class="portfolio-link"
-								target="_blank"
-								>View Project →</a
-							>
-						</div>
-					</div>
-				</div>
-
-				<!-- Video Editing Projects -->
-				<h3
-					class="text-2xl font-semibold mb-6 mt-10 text-pink-700 flex items-center">
-					<i class="fas fa-video mr-3"></i>Video Editing Projects
-				</h3>
-				<div class="portfolio portfolio-grid">
-					<div class="portfolio-card" data-category="video">
-						<div class="portfolio-thumb bg-pink-200">🎬</div>
-						<div class="portfolio-content">
-							<div class="portfolio-title">
-								Promotional Reel for Kanti Design
-							</div>
-							<div class="portfolio-desc">
-								A high-energy promo video featuring fast cuts, motion graphics,
-								and brand highlights for a Clothing Brand.
-							</div>
-							<div class="portfolio-tech">
-								<span class="tech-tag">DaVinci Resolve</span>
-								<span class="tech-tag">Motion Graphics</span>
-								<span class="tech-tag">Color Grading</span>
-								<span class="tech-tag">Voice Over</span>
-								<span class="tech-tag">Light Leaks Transitions</span>
-								<span class="tech-tag">CTAs</span>
-								<span class="tech-tag">Viral Video</span>
-							</div>
-							<a href="https://mega.nz/file/KQMGhJ6S#_U9IZiTcxK3GTXpD2_q7yja9gviEz6nyAK1HgklOuUs" class="portfolio-link" target="_blank"
-								>Watch Video →</a
-							>
-						</div>
-					</div>
-					<div class="portfolio-card" data-category="video">
-						<div class="portfolio-thumb bg-yellow-200">🎵</div>
-						<div class="portfolio-content">
-							<div class="portfolio-title">Music Video Style Edit for YouTube</div>
-							<div class="portfolio-desc">
-								Edited a dynamic music video for YouTube with fast-paced cuts, beat sync, visual effects, and engaging transitions to match the rhythm and energy of the track.
-							</div>
-							<div class="portfolio-tech">
-								<span class="tech-tag">Adobe Premiere</span>
-								<span class="tech-tag">Beat Sync</span>
-								<span class="tech-tag">Visual Effects</span>
-								<span class="tech-tag">Transitions</span>
-								<span class="tech-tag">Color Grading</span>
-								<span class="tech-tag">Davinci Resolve</span>
-								<span class="tech-tag">Story Telling</span>
-							</div>
-							<a href="https://mega.nz/file/CIFkQTxS#4fhEMDuh8BURaSW6f80U7NwAkUKI5rANV4syYG-FZs4" class="portfolio-link" target="_blank">
-								Watch Video →</a>
-						</div>
-					</div>
-					<div class="portfolio-card" data-category="video">
-						<div class="portfolio-thumb bg-purple-200">🏔️</div>
-						<div class="portfolio-content">
-							<div class="portfolio-title">Travel Video – Leh Ladakh Mountains</div>
-							<div class="portfolio-desc">
-								Created an immersive travel video capturing the breathtaking landscapes of Leh Ladakh, featuring cinematic shots, advanced color grading, and engaging storytelling to bring the journey to life.
-							</div>
-							<div class="portfolio-tech">
-								<span class="tech-tag">DaVinci Resolve</span>
-								<span class="tech-tag">Cinematic Shots</span>
-								<span class="tech-tag">Color Grading</span>
-								<span class="tech-tag">Storytelling</span>
-							</div>
-							<a href="https://mega.nz/file/eYdWwZJQ#Zt7k8bVe0YhznXuK6-DYiZy0w7lXHq4nZiXJzKDwn1w" class="portfolio-link" target="_blank">
-								Watch Video →</a>
-						</div>
-					</div>
-					<div class="portfolio-card" data-category="video">
-						<div class="portfolio-thumb bg-blue-100">🏠</div>
-						<div class="portfolio-content">
-							<div class="portfolio-title">Real Estate House Tour Video</div>
-							<div class="portfolio-desc">
-								Produced a modern real estate house tour video for a client, highlighting property features with smooth walkthroughs, elegant transitions, and engaging visuals to attract potential buyers.
-							</div>
-							<div class="portfolio-tech">
-								<span class="tech-tag">DaVinci Resolve</span>
-								<span class="tech-tag">Walkthrough</span>
-								<span class="tech-tag">Transitions</span>
-								<span class="tech-tag">Client Work</span>
-								<span class="tech-tag">Real Estate</span>
-								<span class="tech-tag">Speed Ramp</span>
-							</div>
-							<a href="https://mega.nz/file/eFsjSATI#6JUA4o6RMOhU6Ig7sh-7EH782WfzQ7tstnJWlE__s1U" class="portfolio-link" target="_blank">Watch Video →</a>
-						</div>
-					</div>
-					<div class="portfolio-card" data-category="video">
-						<div class="portfolio-thumb bg-pink-100">🏍️</div>
-						<div class="portfolio-content">
-							<div class="portfolio-title">Travel Reel – Rider GP 23</div>
-							<div class="portfolio-desc">
-								Created a short, high-energy travel reel for a renowned international Lady Bike rider, capturing the spirit of adventure and resilience on a solo journey across India (Kanyakumari to Kashmir, 36,000 km) on a TVS bike. Edited for Instagram, and YouTube.
-							</div>
-							<div class="portfolio-tech">
-								<span class="tech-tag">Reels</span>
-								<span class="tech-tag">Adventure</span>
-								<span class="tech-tag">Bike Travel</span>
-								<span class="tech-tag">Social Media</span>
-								<span class="tech-tag">Instagram Reels</span>
-								<span class="tech-tag">Travel Videos</span>
-								<span class="tech-tag">Lady Biker</span>
-								<span class="tech-tag">Davinci Resolve</span>
-							</div>
-							<a href="https://mega.nz/file/XVMH1ZyQ#g8hoEN0F_hkghCICJOF-qZfK_tEdxOv6Z7nYbuCvqaI" class="portfolio-link" target="_blank">Watch Reel →</a>
-						</div>
-					</div>
-					<div class="portfolio-card" data-category="video">
-						<div class="portfolio-thumb bg-yellow-100">🌍</div>
-						<div class="portfolio-content">
-							<div class="portfolio-title">Short Reels Demo for Travel Influencer</div>
-							<div class="portfolio-desc">
-								Produced demo short reels for a leading travel influencer, showcasing dynamic editing, viral hooks, and engaging storytelling tailored for YouTube, Instagram, and Facebook audiences.
-							</div>
-							<div class="portfolio-tech">
-								<span class="tech-tag">Reels</span>
-								<span class="tech-tag">Influencer</span>
-								<span class="tech-tag">Viral Editing</span>
-								<span class="tech-tag">YouTube Shorts</span>
-								<span class="tech-tag">Instagram Reels</span>
-								<span class="tech-tag">Travel Videos</span>						
-							</div>
-							<a href="https://mega.nz/file/fIF0xBDQ#cvlHCbYimQRSWsA__V-FmKnXWgBQ8Rc24VCntNmH0Xs" class="portfolio-link" target="_blank">Watch Reel →</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Testimonials Section -->
-		<section id="testimonials" class="py-24 bg-pink-100">
-			<div class="container mx-auto px-4">
-				<h2 class="text-5xl font-bold mb-12 text-center">
-					Client Testimonials
-				</h2>
-
-				<!-- Testimonials Carousel -->
-				<div class="grid md:grid-cols-3 gap-8">
-					<div
-						class="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-						<div class="flex items-center mb-4">
-							<div class="w-16 h-20 bg-gray-200 rounded-xl overflow-hidden">
-								<img
-									src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/images/aline-yellow-bg.jpg?updatedAt=1747752818989"
-									class="rounded-xl w-full h-full" />
-							</div>
-							<div class="ml-4">
-								<h4 class="font-semibold">Alina O</h4>
-								<p class="text-sm text-gray-600">
-									Former Client, <br />
-									General Manager
-								</p>
-								<p class="text-sm text-gray-600 font-bold">
-									Kanti Design, India.
-								</p>
-							</div>
-						</div>
-						<p class="text-gray-600">
-							"The job was done on time, and with very nice attitude! I liked
-							the video. Thank you!"
-						</p>
-						<div class="mt-4 flex text-yellow-400">
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-						</div>
-					</div>
-
-					<div
-						class="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-						<div class="flex items-center mb-4">
-							<div class="w-14 h-14 bg-gray-200 rounded-full overflow-hidden">
-								<img
-									src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/Mercedes/Mercedes-short.jpeg?updatedAt=1747642164611"
-									alt="Mercedes Logo"
-									class="rounded-full w-full h-full object-cover" />
-							</div>
-							<div class="ml-4">
-								<h4 class="font-semibold">Shuvam A</h4>
-								<p class="text-sm text-gray-600">
-									Former Colleague @Deloitte USI, <br />
-									Currently Software Engineer,
-								</p>
-								<p class="text-sm text-gray-600 font-bold">
-									Mercedes Benz, Germany
-								</p>
-							</div>
-						</div>
-						<p class="text-gray-600">
-							"I had the pleasure of working with Mr. Kumar for six months. He
-							is very energetic, he knows his way around people, he is good with
-							the clients, does whatever it takes to help colleagues and gets
-							things done. I can gurantee that he will be an asset wherever he
-							goes."
-						</p>
-						<div class="mt-4 flex text-yellow-400">
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-							<svg class="w-5 h-5 fill-gray-300" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-						</div>
-					</div>
-
-					<div
-						class="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-						<div class="flex items-center mb-4">
-							<div class="w-14 h-14 bg-gray-200 rounded-full overflow-hidden">
-								<img
-									src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/deloitte/Deloitte-black-Short.jpeg?updatedAt=1747642157960"
-									alt="Deloitte Logo"
-									class="rounded-full w-full h-full object-cover" />
-							</div>
-							<div class="ml-4">
-								<h4 class="font-semibold">Priyanka K</h4>
-								<p class="text-sm text-gray-600">
-									Former Colleague, <br />
-									Senior Consultant,
-								</p>
-								<p class="text-sm text-gray-700 font-bold">
-									Deloitte US, Offices of India(USI)
-								</p>
-							</div>
-						</div>
-						<p class="text-gray-600">
-							"It was great working with Mr. Kumar. He is always excited &
-							energetic and ready to take up the tasks coming his way and
-							deliver it on time. I hope he would be the great asset to the
-							organisation he works for. "
-						</p>
-						<div class="mt-4 flex text-yellow-400">
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-							<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-								<path
-									d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-							</svg>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="contact" class="py-24 bg-white">
-			<div class="container mx-auto px-4">
-				<div class="max-w-2xl mx-auto">
-					<h2 class="text-5xl font-bold mb-12 text-center">
-						Let's Work Together
+		<div class="container mx-auto px-4 relative z-10">
+			<div class="max-w-6xl mx-auto">
+				<!-- Section Header -->
+				<div class="text-center mb-12 relative">
+					<h2
+						class="text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
+						About Me
 					</h2>
-					<form
-						action="https://formspree.io/f/meogadvw"
-						method="POST"
-						class="space-y-6">
-						<div class="grid md:grid-cols-2 gap-6">
-							<div>
-								<label class="block text-sm font-medium text-gray-700 mb-2"
-									>Name *</label
-								>
-								<input
-									type="text"
-									name="name"
-									required
-									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
+					<div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-orange-500 mx-auto rounded-full"></div>
+					<!-- Violet blob under About Me heading -->
+					<div class="blob blob-1" style="top: 60px; left: 50%; transform: translateX(-50%); z-index: -1;">
+					</div>
+				</div>
+				<!-- Main Content Grid -->
+				<div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+					<!-- Profile Image Section -->
+					<div class="lg:order-1 relative">
+						<div class="profile-image-container">
+							<div class="profile-image-blob">
+								<img src="./assets/img/self.jpg" alt="Mr. Kumar - Web Developer & Video Editor"
+									class="profile-image">
 							</div>
-							<div>
-								<label class="block text-sm font-medium text-gray-700 mb-2"
-									>Phone Number *</label
-								>
-								<input
-									type="tel"
-									name="phone"
-									required
-									placeholder="+1 9876543210 (with country code)"
-									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
+							<!-- Floating Elements -->
+							<div class="floating-element floating-1">
+								<div class="floating-icon">💻</div>
+							</div>
+							<div class="floating-element floating-2">
+								<div class="floating-icon">🎬</div>
+							</div>
+							<div class="floating-element floating-3">
+								<div class="floating-icon">🚀</div>
 							</div>
 						</div>
-						<div class="grid md:grid-cols-2 gap-6">
-							<div>
-								<label class="block text-sm font-medium text-gray-700 mb-2"
-									>Email *</label
-								>
-								<input
-									type="email"
-									name="email"
-									required
-									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
+					</div>
+
+					<!-- Content Section -->
+					<div class="lg:order-2">
+						<div class="about-content">
+							<h3 class="text-xl font-semibold mb-6 text-gray-800">
+								Hi, I'm <span class="text-purple-600">Mr. Kumar</span>
+							</h3>
+							<p class="text-sm md:text-md sm:text-[18px] text-gray-600 leading-relaxed mb-8">
+								A passionate freelance <strong class="text-purple-600">Web Developer</strong> & <strong
+									class="text-orange-500">Video Editor</strong> helping
+								small businesses go online with mobile-first, high-converting
+								websites and creative video content.
+								<br />
+								I specialize in helping small businesses build a powerful yet impactful online presence
+								by
+								leveraging clean, fast, and mobile-first websites and engaging viral
+								video content that helps establish their online presence. With expertise in HTML, CSS,
+								Responsive Design, modern
+								JavaScript, and video editing, I focus on delivering the best solutions
+								that work seamlessly across all devices while maintaining aesthetic excellence that puts
+								your content first with clear CTAs and focus on
+								boosting your business growth.
+							</p>
+
+							<!-- Skills Tags -->
+							<div class="skills-tags mb-8">
+								<span class="skill-tag">HTML5</span>
+								<span class="skill-tag">CSS3</span>
+								<span class="skill-tag">JavaScript</span>
+								<span class="skill-tag">Responsive Design</span>
+								<span class="skill-tag">Video Editing</span>
+								<span class="skill-tag">DaVinci Resolve</span>
 							</div>
-							<div>
-								<label class="block text-sm font-medium text-gray-700 mb-2"
-									>Country *</label
-								>
-								<select
-									name="country"
-									required
-									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
-									<option value="">Select your country</option>
-									<option value="India">India</option>
-									<option value="United States">United States</option>
-									<option value="Canada">Canada</option>
-									<option value="United Kingdom">United Kingdom</option>
-									<option value="Australia">Australia</option>
-									<option value="Germany">Germany</option>
-									<option value="France">France</option>
-									<option value="Netherlands">Netherlands</option>
-									<option value="Singapore">Singapore</option>
-									<option value="UAE">UAE</option>
-									<option value="Other">Other</option>
-								</select>
-							</div>
-						</div>
-						<div>
-							<label class="block text-sm font-medium text-gray-700 mb-2"
-								>Company/Organization</label
-							>
-							<input
-								type="text"
-								name="company"
-								placeholder="Your company name (optional)"
-								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
-						</div>
-						<div>
-							<label class="block text-sm font-medium text-gray-700 mb-2"
-								>Purpose of Contact *</label
-							>
-							<select
-								name="purpose"
-								id="purpose"
-								required
-								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
-								<option value="">Select purpose</option>
-								<option value="Web Development">Web Development Project</option>
-								<option value="Video Editing">Video Editing Project</option>
-								<option value="Website Redesign">Website Redesign</option>
-								<option value="Freelance Project">Freelance Project</option>
-								<option value="Contract Based Project">Contract Based Project</option>
-								<option value="Contract to Hire (CTH)">Contract to Hire (CTH) Project</option>
-								<option value="Resume Download">Resume Download</option>
-								<option value="Consultation">Consultation</option>
-								<option value="Partnership">Partnership Opportunity</option>
-								<option value="Job Opportunity">Job Opportunity</option>
-								<option value="Other">Other</option>
-							</select>
-						</div>
-						<div id="other-purpose" class="hidden">
-							<label class="block text-sm font-medium text-gray-700 mb-2"
-								>Please specify *</label
-							>
-							<input
-								type="text"
-								name="other_purpose"
-								placeholder="Please describe your specific need"
-								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
-						</div>
-						<div class="grid md:grid-cols-2 gap-6">
-							<div>
-								<label class="block text-sm font-medium text-gray-700 mb-2"
-									>Budget Range</label
-								>
-								<select
-									name="budget"
-									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
-									<option value="">Select budget range</option>
-									<option value="Under $500">Under $500</option>
-									<option value="$500 - $1,000">$500 - $1,000</option>
-									<option value="$1,000 - $2,500">$1,000 - $2,500</option>
-									<option value="$2,500 - $5,000">$2,500 - $5,000</option>
-									<option value="$5,000 - $10,000">$5,000 - $10,000</option>
-									<option value="Over $10,000">Over $10,000</option>
-									<option value="To be discussed">To be discussed</option>
-								</select>
-							</div>
-							<div>
-								<label class="block text-sm font-medium text-gray-700 mb-2"
-									>Timeline</label
-								>
-								<select
-									name="timeline"
-									class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
-									<option value="">Select timeline</option>
-									<option value="ASAP">ASAP</option>
-									<option value="1-2 weeks">1-2 weeks</option>
-									<option value="1 month">1 month</option>
-									<option value="2-3 months">2-3 months</option>
-									<option value="3+ months">3+ months</option>
-									<option value="No specific deadline">No specific deadline</option>
-								</select>
+
+							<!-- CTA Button -->
+							<div class="flex flex-col sm:flex-row gap-4">
+								<a href="#contact" data-resume-download
+									class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105">
+									Know More
+								</a>
+								<a href="#portfolio"
+									class="inline-block border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-full text-lg font-medium hover:bg-purple-600 hover:text-white transition-all duration-300 transform hover:scale-105">
+									View Portfolio
+								</a>
 							</div>
 						</div>
-						<div>
-							<label class="block text-sm font-medium text-gray-700 mb-2"
-								>How did you find me?</label
-							>
-							<select
-								name="referral"
-								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
-								<option value="">Select option</option>
-								<option value="Google Search">Google Search</option>
-								<option value="Social Media">Social Media</option>
-								<option value="Referral">Referral</option>
-								<option value="Portfolio">Portfolio</option>
-								<option value="LinkedIn">LinkedIn</option>
-								<option value="Other">Other</option>
-							</select>
-						</div>
-						<div>
-							<label class="block text-sm font-medium text-gray-700 mb-2"
-								>Message *</label
-							>
-							<textarea
-								name="message"
-								required
-								rows="4"
-								placeholder="Tell me about your project, requirements, and any specific details..."
-								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 resize-none"></textarea>
-						</div>
-						<button
-							type="submit"
-							class="w-full bg-black text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors">
-							Send Message
-						</button>
-					</form>
+					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<footer class="bg-black text-white py-12">
-			<div class="container mx-auto px-4">
-				<div class="text-center">
-					<h2 class="text-2xl font-bold mb-6">MR. KUMAR</h2>
-					<p class="text-gray-400 mb-8">
-						Freelance Web Developer & Video Editor, <br />
-						<a href="mailto:info@namokumar.com">
-							<i class="fa-duotone fa-solid fa-envelope"> </i>
-							info@namokumar.com
-						</a>
+	<!-- Services Section -->
+	<section id="services" class="py-24 bg-gray-200">
+		<div class="container mx-auto px-4">
+			<h2 class="text-5xl font-bold mb-12 text-center">Services</h2>
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="bg-white p-8 rounded-lg shadow-sm">
+					<div class="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-6">
+						<i class="fa-solid fa-mobile fa-xl" style="color: #ffffff"></i>
+					</div>
+					<h3 class="text-xl font-semibold mb-4">Mobile-First Design</h3>
+					<p class="text-gray-600">
+						Responsive, fast, and beautiful websites optimized for mobile
+						devices that look perfect on any device. Built from scratch for
+						your business goals, ensuring a pixel perfect, ultra fast
+						experience across all screen sizes.
 					</p>
+				</div>
+				<div
+					class="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
+					<div
+						class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center mb-6">
+						<i class="fas fa-code text-white text-xl"></i>
+					</div>
+					<h3 class="text-xl font-semibold mb-4">Custom Development</h3>
+					<p class="text-gray-600">
+						Clean, hand-coded solutions tailored to your specific business
+						needs and goals. Mainly focusing on performance, SEO and best user
+						experience. Either you need a simple landing page or a complex web
+						application, We offer best solutions that perfectly suits your
+						business goals.
+					</p>
+				</div>
+				<div
+					class="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100">
+					<div
+						class="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center mb-6">
+						<i class="fas fa-video text-white text-xl"></i>
+					</div>
+					<h3 class="text-xl font-semibold mb-4">Video Editing</h3>
+					<p class="text-gray-600">
+						Professional editing services for Promos, Reels, YouTube Shorts,
+						Podcasts, Travel Videos, Documentaries, Testimonials & more.
+						Edited using DaVinci Resolve and Adobe Premiere Pro with cinematic
+						cuts, color correction, storytelling, and premium transitions and
+						more.
+					</p>
+				</div>
+			</div>
+			<div class="text-center mt-12">
+				<a href="#contact" data-resume-download
+					class="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:bg-gray-800 transition-colors">
+					📄 Download Resume & Get Started
+				</a>
+			</div>
+		</div>
+	</section>
 
-					<!-- <div class="flex justify-center gap-6 mb-8">
+	<!-- Portfolio Section -->
+	<section id="portfolio" class="py-24 bg-gray-50">
+		<div class="container mx-auto px-4">
+			<h2 class="text-5xl font-bold mb-12 text-center">Portfolio</h2>
+
+			<!-- Web Projects -->
+			<h3 class="text-2xl font-semibold mb-6 mt-10 text-purple-700 flex items-center">
+				<i class="fas fa-code mr-3"></i>Web Development Projects
+			</h3>
+			<div class="portfolio portfolio-grid mb-16">
+				<div class="portfolio-card" data-category="web">
+					<div class="portfolio-thumb bg-purple-100">🧘‍♂️</div>
+					<div class="portfolio-content">
+						<div class="portfolio-title">Wellness Campaign Landing Page</div>
+						<div class="portfolio-desc">
+							A focused landing page for wellness and health campaigns with
+							mobile-first design and high conversion optimization.
+						</div>
+						<div class="portfolio-tech">
+							<span class="tech-tag">HTML</span>
+							<span class="tech-tag">CSS</span>
+							<span class="tech-tag">JavaScript</span>
+							<span class="tech-tag">Responsive</span>
+						</div>
+						<a href="https://aasthawellness.info/" class="portfolio-link" target="_blank">View Project →</a>
+					</div>
+				</div>
+				<div class="portfolio-card" data-category="web">
+					<div class="portfolio-thumb bg-yellow-100">✈️</div>
+					<div class="portfolio-content">
+						<div class="portfolio-title">Travel Agency Website</div>
+						<div class="portfolio-desc">
+							A responsive travel agency platform for booking and exploring
+							destinations with modern UI/UX design.
+						</div>
+						<div class="portfolio-tech">
+							<span class="tech-tag">HTML</span>
+							<span class="tech-tag">CSS</span>
+							<span class="tech-tag">JavaScript</span>
+							<span class="tech-tag">Bootstrap</span>
+						</div>
+						<a href="https://kumardevelops.github.io/nltravel/" class="portfolio-link" target="_blank">View
+							Project →</a>
+					</div>
+				</div>
+				<div class="portfolio-card" data-category="web">
+					<div class="portfolio-thumb bg-pink-100">💼</div>
+					<div class="portfolio-content">
+						<div class="portfolio-title">Commission Tracking Software</div>
+						<div class="portfolio-desc">
+							A comprehensive commission management solution for sales teams
+							with real-time tracking and reporting.
+						</div>
+						<div class="portfolio-tech">
+							<span class="tech-tag">HTML</span>
+							<span class="tech-tag">CSS</span>
+							<span class="tech-tag">JavaScript</span>
+							<span class="tech-tag">Dashboard</span>
+						</div>
+						<a href="https://kumardevelops.github.io/elevatehq/" class="portfolio-link" target="_blank">View
+							Project →</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Video Editing Projects -->
+			<h3 class="text-2xl font-semibold mb-6 mt-10 text-pink-700 flex items-center">
+				<i class="fas fa-video mr-3"></i>Video Editing Projects
+			</h3>
+			<div class="portfolio portfolio-grid">
+				<div class="portfolio-card" data-category="video">
+					<div class="portfolio-thumb bg-pink-200">🎬</div>
+					<div class="portfolio-content">
+						<div class="portfolio-title">
+							Promotional Reel for Kanti Design
+						</div>
+						<div class="portfolio-desc">
+							A high-energy promo video featuring fast cuts, motion graphics,
+							and brand highlights for a Clothing Brand.
+						</div>
+						<div class="portfolio-tech">
+							<span class="tech-tag">DaVinci Resolve</span>
+							<span class="tech-tag">Motion Graphics</span>
+							<span class="tech-tag">Color Grading</span>
+							<span class="tech-tag">Voice Over</span>
+							<span class="tech-tag">Light Leaks Transitions</span>
+							<span class="tech-tag">CTAs</span>
+							<span class="tech-tag">Viral Video</span>
+						</div>
+						<a href="https://mega.nz/file/KQMGhJ6S#_U9IZiTcxK3GTXpD2_q7yja9gviEz6nyAK1HgklOuUs"
+							class="portfolio-link" target="_blank">Watch Video →</a>
+					</div>
+				</div>
+				<div class="portfolio-card" data-category="video">
+					<div class="portfolio-thumb bg-yellow-200">🎵</div>
+					<div class="portfolio-content">
+						<div class="portfolio-title">Music Video Style Edit for YouTube</div>
+						<div class="portfolio-desc">
+							Edited a dynamic music video for YouTube with fast-paced cuts, beat sync, visual effects,
+							and engaging transitions to match the rhythm and energy of the track.
+						</div>
+						<div class="portfolio-tech">
+							<span class="tech-tag">Adobe Premiere</span>
+							<span class="tech-tag">Beat Sync</span>
+							<span class="tech-tag">Visual Effects</span>
+							<span class="tech-tag">Transitions</span>
+							<span class="tech-tag">Color Grading</span>
+							<span class="tech-tag">Davinci Resolve</span>
+							<span class="tech-tag">Story Telling</span>
+						</div>
+						<a href="https://mega.nz/file/CIFkQTxS#4fhEMDuh8BURaSW6f80U7NwAkUKI5rANV4syYG-FZs4"
+							class="portfolio-link" target="_blank">
+							Watch Video →</a>
+					</div>
+				</div>
+				<div class="portfolio-card" data-category="video">
+					<div class="portfolio-thumb bg-purple-200">🏔️</div>
+					<div class="portfolio-content">
+						<div class="portfolio-title">Travel Video – Leh Ladakh Mountains</div>
+						<div class="portfolio-desc">
+							Created an immersive travel video capturing the breathtaking landscapes of Leh Ladakh,
+							featuring cinematic shots, advanced color grading, and engaging storytelling to bring the
+							journey to life.
+						</div>
+						<div class="portfolio-tech">
+							<span class="tech-tag">DaVinci Resolve</span>
+							<span class="tech-tag">Cinematic Shots</span>
+							<span class="tech-tag">Color Grading</span>
+							<span class="tech-tag">Storytelling</span>
+						</div>
+						<a href="https://mega.nz/file/eYdWwZJQ#Zt7k8bVe0YhznXuK6-DYiZy0w7lXHq4nZiXJzKDwn1w"
+							class="portfolio-link" target="_blank">
+							Watch Video →</a>
+					</div>
+				</div>
+				<div class="portfolio-card" data-category="video">
+					<div class="portfolio-thumb bg-blue-100">🏠</div>
+					<div class="portfolio-content">
+						<div class="portfolio-title">Real Estate House Tour Video</div>
+						<div class="portfolio-desc">
+							Produced a modern real estate house tour video for a client, highlighting property features
+							with smooth walkthroughs, elegant transitions, and engaging visuals to attract potential
+							buyers.
+						</div>
+						<div class="portfolio-tech">
+							<span class="tech-tag">DaVinci Resolve</span>
+							<span class="tech-tag">Walkthrough</span>
+							<span class="tech-tag">Transitions</span>
+							<span class="tech-tag">Client Work</span>
+							<span class="tech-tag">Real Estate</span>
+							<span class="tech-tag">Speed Ramp</span>
+						</div>
+						<a href="https://mega.nz/file/eFsjSATI#6JUA4o6RMOhU6Ig7sh-7EH782WfzQ7tstnJWlE__s1U"
+							class="portfolio-link" target="_blank">Watch Video →</a>
+					</div>
+				</div>
+				<div class="portfolio-card" data-category="video">
+					<div class="portfolio-thumb bg-pink-100">🏍️</div>
+					<div class="portfolio-content">
+						<div class="portfolio-title">Travel Reel – Rider GP 23</div>
+						<div class="portfolio-desc">
+							Created a short, high-energy travel reel for a renowned international Lady Bike rider,
+							capturing the spirit of adventure and resilience on a solo journey across India (Kanyakumari
+							to Kashmir, 36,000 km) on a TVS bike. Edited for Instagram, and YouTube.
+						</div>
+						<div class="portfolio-tech">
+							<span class="tech-tag">Reels</span>
+							<span class="tech-tag">Adventure</span>
+							<span class="tech-tag">Bike Travel</span>
+							<span class="tech-tag">Social Media</span>
+							<span class="tech-tag">Instagram Reels</span>
+							<span class="tech-tag">Travel Videos</span>
+							<span class="tech-tag">Lady Biker</span>
+							<span class="tech-tag">Davinci Resolve</span>
+						</div>
+						<a href="https://mega.nz/file/XVMH1ZyQ#g8hoEN0F_hkghCICJOF-qZfK_tEdxOv6Z7nYbuCvqaI"
+							class="portfolio-link" target="_blank">Watch Reel →</a>
+					</div>
+				</div>
+				<div class="portfolio-card" data-category="video">
+					<div class="portfolio-thumb bg-yellow-100">🌍</div>
+					<div class="portfolio-content">
+						<div class="portfolio-title">Short Reels Demo for Travel Influencer</div>
+						<div class="portfolio-desc">
+							Produced demo short reels for a leading travel influencer, showcasing dynamic editing, viral
+							hooks, and engaging storytelling tailored for YouTube, Instagram, and Facebook audiences.
+						</div>
+						<div class="portfolio-tech">
+							<span class="tech-tag">Reels</span>
+							<span class="tech-tag">Influencer</span>
+							<span class="tech-tag">Viral Editing</span>
+							<span class="tech-tag">YouTube Shorts</span>
+							<span class="tech-tag">Instagram Reels</span>
+							<span class="tech-tag">Travel Videos</span>
+						</div>
+						<a href="https://mega.nz/file/fIF0xBDQ#cvlHCbYimQRSWsA__V-FmKnXWgBQ8Rc24VCntNmH0Xs"
+							class="portfolio-link" target="_blank">Watch Reel →</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonials Section -->
+	<section id="testimonials" class="py-24 bg-pink-100">
+		<div class="container mx-auto px-4">
+			<h2 class="text-5xl font-bold mb-12 text-center">
+				Client Testimonials
+			</h2>
+
+			<!-- Testimonials Carousel -->
+			<div class="grid md:grid-cols-3 gap-8">
+				<div
+					class="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+					<div class="flex items-center mb-4">
+						<div class="w-16 h-20 bg-gray-200 rounded-xl overflow-hidden">
+							<img src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/images/aline-yellow-bg.jpg?updatedAt=1747752818989"
+								class="rounded-xl w-full h-full" />
+						</div>
+						<div class="ml-4">
+							<h4 class="font-semibold">Alina O</h4>
+							<p class="text-sm text-gray-600">
+								Former Client, <br />
+								General Manager
+							</p>
+							<p class="text-sm text-gray-600 font-bold">
+								Kanti Design, India.
+							</p>
+						</div>
+					</div>
+					<p class="text-gray-600">
+						"The job was done on time, and with very nice attitude! I liked
+						the video. Thank you!"
+					</p>
+					<div class="mt-4 flex text-yellow-400">
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+						<svg class="w-5 h-5 fill-gray-300" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+					</div>
+				</div>
+
+				<div
+					class="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+					<div class="flex items-center mb-4">
+						<div class="w-14 h-14 bg-gray-200 rounded-full overflow-hidden">
+							<img src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/Mercedes/Mercedes-short.jpeg?updatedAt=1747642164611"
+								alt="Mercedes Logo" class="rounded-full w-full h-full object-cover" />
+						</div>
+						<div class="ml-4">
+							<h4 class="font-semibold">Shuvam A</h4>
+							<p class="text-sm text-gray-600">
+								Former Colleague @Deloitte USI, <br />
+								Currently Software Engineer,
+							</p>
+							<p class="text-sm text-gray-600 font-bold">
+								Mercedes Benz, Germany
+							</p>
+						</div>
+					</div>
+					<p class="text-gray-600">
+						"I had the pleasure of working with Mr. Kumar for six months. He
+						is very energetic, he knows his way around people, he is good with
+						the clients, does whatever it takes to help colleagues and gets
+						things done. I can gurantee that he will be an asset wherever he
+						goes."
+					</p>
+					<div class="mt-4 flex text-yellow-400">
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+					</div>
+				</div>
+
+				<div
+					class="bg-white p-8 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+					<div class="flex items-center mb-4">
+						<div class="w-14 h-14 bg-gray-200 rounded-full overflow-hidden">
+							<img src="https://ik.imagekit.io/tujsl2f24/self-portfolio-website/logo/deloitte/Deloitte-black-Short.jpeg?updatedAt=1747642157960"
+								alt="Deloitte Logo" class="rounded-full w-full h-full object-cover" />
+						</div>
+						<div class="ml-4">
+							<h4 class="font-semibold">Priyanka K</h4>
+							<p class="text-sm text-gray-600">
+								Former Colleague, <br />
+								Senior Consultant,
+							</p>
+							<p class="text-sm text-gray-700 font-bold">
+								Deloitte US, Offices of India(USI)
+							</p>
+						</div>
+					</div>
+					<p class="text-gray-600">
+						"It was great working with Mr. Kumar. He is always excited &
+						energetic and ready to take up the tasks coming his way and
+						deliver it on time. I hope he would be the great asset to the
+						organisation he works for. "
+					</p>
+					<div class="mt-4 flex text-yellow-400">
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+						<svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+							<path
+								d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="py-24 bg-white">
+		<div class="container mx-auto px-4">
+			<div class="max-w-2xl mx-auto">
+				<h2 class="text-5xl font-bold mb-12 text-center">
+					Let's Work Together
+				</h2>
+				<form action="https://formspree.io/f/meogadvw" method="POST" class="space-y-6">
+					<div class="grid md:grid-cols-2 gap-6">
+						<div>
+							<label class="block text-sm font-medium text-gray-700 mb-2">Name *</label>
+							<input type="text" name="name" required
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
+						</div>
+						<div>
+							<label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+							<input type="tel" name="phone" required placeholder="+1 9876543210 (with country code)"
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
+						</div>
+					</div>
+					<div class="grid md:grid-cols-2 gap-6">
+						<div>
+							<label class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+							<input type="email" name="email" required
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
+						</div>
+						<div>
+							<label class="block text-sm font-medium text-gray-700 mb-2">Country *</label>
+							<select name="country" required
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+								<option value="">Select your country</option>
+								<option value="India">India</option>
+								<option value="United States">United States</option>
+								<option value="Canada">Canada</option>
+								<option value="United Kingdom">United Kingdom</option>
+								<option value="Australia">Australia</option>
+								<option value="Germany">Germany</option>
+								<option value="France">France</option>
+								<option value="Netherlands">Netherlands</option>
+								<option value="Singapore">Singapore</option>
+								<option value="UAE">UAE</option>
+								<option value="Other">Other</option>
+							</select>
+						</div>
+					</div>
+					<div>
+						<label class="block text-sm font-medium text-gray-700 mb-2">Company/Organization</label>
+						<input type="text" name="company" placeholder="Your company name (optional)"
+							class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
+					</div>
+					<div>
+						<label class="block text-sm font-medium text-gray-700 mb-2">Purpose of Contact *</label>
+						<select name="purpose" id="purpose" required
+							class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+							<option value="">Select purpose</option>
+							<option value="Web Development">Web Development Project</option>
+							<option value="Video Editing">Video Editing Project</option>
+							<option value="Website Redesign">Website Redesign</option>
+							<option value="Freelance Project">Freelance Project</option>
+							<option value="Contract Based Project">Contract Based Project</option>
+							<option value="Contract to Hire (CTH)">Contract to Hire (CTH) Project</option>
+							<option value="Resume Download">Resume Download</option>
+							<option value="Consultation">Consultation</option>
+							<option value="Partnership">Partnership Opportunity</option>
+							<option value="Job Opportunity">Job Opportunity</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+					<div id="other-purpose" class="hidden">
+						<label class="block text-sm font-medium text-gray-700 mb-2">Please specify *</label>
+						<input type="text" name="other_purpose" placeholder="Please describe your specific need"
+							class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200" />
+					</div>
+					<div class="grid md:grid-cols-2 gap-6">
+						<div>
+							<label class="block text-sm font-medium text-gray-700 mb-2">Budget Range</label>
+							<select name="budget"
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+								<option value="">Select budget range</option>
+								<option value="Under $500">Under $500</option>
+								<option value="$500 - $1,000">$500 - $1,000</option>
+								<option value="$1,000 - $2,500">$1,000 - $2,500</option>
+								<option value="$2,500 - $5,000">$2,500 - $5,000</option>
+								<option value="$5,000 - $10,000">$5,000 - $10,000</option>
+								<option value="Over $10,000">Over $10,000</option>
+								<option value="To be discussed">To be discussed</option>
+							</select>
+						</div>
+						<div>
+							<label class="block text-sm font-medium text-gray-700 mb-2">Timeline</label>
+							<select name="timeline"
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+								<option value="">Select timeline</option>
+								<option value="ASAP">ASAP</option>
+								<option value="1-2 weeks">1-2 weeks</option>
+								<option value="1 month">1 month</option>
+								<option value="2-3 months">2-3 months</option>
+								<option value="3+ months">3+ months</option>
+								<option value="No specific deadline">No specific deadline</option>
+							</select>
+						</div>
+					</div>
+					<div>
+						<label class="block text-sm font-medium text-gray-700 mb-2">How did you find me?</label>
+						<select name="referral"
+							class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200">
+							<option value="">Select option</option>
+							<option value="Google Search">Google Search</option>
+							<option value="Social Media">Social Media</option>
+							<option value="Referral">Referral</option>
+							<option value="Portfolio">Portfolio</option>
+							<option value="LinkedIn">LinkedIn</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+					<div>
+						<label class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+						<textarea name="message" required rows="4"
+							placeholder="Tell me about your project, requirements, and any specific details..."
+							class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 resize-none"></textarea>
+					</div>
+					<button type="submit"
+						class="w-full bg-black text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors">
+						Send Message
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg-black text-white py-12">
+		<div class="container mx-auto px-4">
+			<div class="text-center">
+				<h2 class="text-2xl font-bold mb-6">MR. KUMAR</h2>
+				<p class="text-gray-400 mb-8">
+					Freelance Web Developer & Video Editor, <br />
+					<a href="mailto:info@namokumar.com">
+						<i class="fa-duotone fa-solid fa-envelope"> </i>
+						info@namokumar.com
+					</a>
+				</p>
+
+				<!-- <div class="flex justify-center gap-6 mb-8">
 						<a
 							href="#"
 							class="text-gray-400 hover:text-white transition-colors">
@@ -949,12 +853,13 @@
 							<i class="fab fa-facebook text-xl"></i>
 						</a>
 					</div> -->
-					<p class="text-gray-400">
-						&copy; 2025 Mr. Kumar. All rights reserved.
-					</p>
-				</div>
+				<p class="text-gray-400">
+					&copy; 2025 Mr. Kumar. All rights reserved.
+				</p>
 			</div>
-		</footer>
-		<script src="/js/script.js"></script>
-	</body>
+		</div>
+	</footer>
+	<script src="/js/script.js"></script>
+</body>
+
 </html>
