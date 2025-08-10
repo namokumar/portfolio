@@ -101,3 +101,13 @@ Thank you for your interest in my portfolio. This README is designed for recruit
 ## 🙏 Thank You
 
 Thank you for considering me for your next project. I look forward to helping you achieve your business goals with world-class web development and video editing services. 
+
+---
+
+## Add a "View All Projects" Button
+
+Copy and paste this wherever you want the button to appear:
+
+```html
+<a href="projects.html" style="display:inline-block;background:#5a189a;color:#fff;padding:0.8rem 2rem;border-radius:0.7rem;font-size:1.1rem;font-weight:600;text-decoration:none;box-shadow:0 2px 8px rgba(90,24,154,0.08);transition:background 0.2s;">View All Projects</a>
+``` 

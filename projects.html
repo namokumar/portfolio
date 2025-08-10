@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Namo Kumar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin: 3rem 0;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            width: 320px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px) scale(1.03);
+        }
+
+        .project-cover {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 1rem;
+            color: #5a189a;
+        }
+
+        .modal-bg {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-bg.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: #fff;
+            border-radius: 1rem;
+            max-width: 500px;
+            width: 90vw;
+            padding: 2rem;
+            position: relative;
+            box-shadow: 0 4px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            color: #5a189a;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        @media (max-width: 600px) {
+            .projects-container {
+                gap: 1rem;
+            }
+
+            .project-card {
+                width: 95vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- You can copy your site header here if desired -->
+        <h1 style="text-align:center; margin-top:2rem; color:#5a189a;">My Projects</h1>
+    </header>
+    <main>
+        <div class="projects-container">
+            <div class="project-card" onclick="openModal(0)">
+                <img class="project-cover" src="assets/img/selfimg.jpg" alt="Project 1 Cover">
+                <div class="project-title">Personal Portfolio Website</div>
+            </div>
+            <div class="project-card" onclick="openModal(1)">
+                <img class="project-cover" src="assets/img/self.jpg" alt="Project 2 Cover">
+                <div class="project-title">E-commerce Landing Page</div>
+            </div>
+            <div class="project-card" onclick="openModal(2)">
+                <img class="project-cover" src="assets/background/aboutme-profilepic-bg.jpg" alt="Project 3 Cover">
+                <div class="project-title">Video Editing Showcase</div>
+            </div>
+        </div>
+        <!-- Modal Popup -->
+        <div class="modal-bg" id="modalBg">
+            <div class="modal-content" id="modalContent">
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+                <div id="modalInner"></div>
+            </div>
+        </div>
+    </main>
+    <footer style="margin-top:3rem;">
+        <!-- You can copy your site footer here if desired -->
+        <div style="text-align:center; color:#888; font-size:0.95rem; padding:2rem 0;">&copy; 2024 Namo Kumar. All
+            rights reserved.</div>
+    </footer>
+    <script>
+        const projects = [
+            {
+                title: "Personal Portfolio Website",
+                image: "assets/img/selfimg.jpg",
+                description: "A modern, responsive portfolio to showcase my web development and video editing skills. Built with HTML, CSS, and JavaScript, optimized for SEO and high-paying international clients.",
+                links: [
+                    { label: "Live Demo", url: "https://namokumar.com/" },
+                    { label: "GitHub", url: "#" }
+                ]
+            },
+            {
+                title: "E-commerce Landing Page",
+                image: "assets/img/self.jpg",
+                description: "A high-converting landing page for an e-commerce brand, featuring smooth animations, product highlights, and a mobile-first design.",
+                links: [
+                    { label: "Live Demo", url: "#" },
+                    { label: "GitHub", url: "#" }
+                ]
+            },
+            {
+                title: "Video Editing Showcase",
+                image: "assets/background/aboutme-profilepic-bg.jpg",
+                description: "A gallery of my best video editing projects, with before/after comparisons and client testimonials.",
+                links: [
+                    { label: "Watch Reel", url: "#" }
+                ]
+            }
+        ];
+        function openModal(idx) {
+            const p = projects[idx];
+            let html = `<h2 style='color:#5a189a;'>${p.title}</h2>`;
+            html += `<img src='${p.image}' alt='${p.title}' style='width:100%;border-radius:0.5rem;margin:1rem 0;'>`;
+            html += `<p style='margin-bottom:1.5rem;'>${p.description}</p>`;
+            if (p.links && p.links.length) {
+                html += '<div style="display:flex;gap:1rem;flex-wrap:wrap;">';
+                p.links.forEach(l => {
+                    html += `<a href='${l.url}' target='_blank' style='background:#5a189a;color:#fff;padding:0.6rem 1.2rem;border-radius:0.5rem;text-decoration:none;font-weight:500;'>${l.label}</a>`;
+                });
+                html += '</div>';
+            }
+            document.getElementById('modalInner').innerHTML = html;
+            document.getElementById('modalBg').classList.add('active');
+        }
+        function closeModal() {
+            document.getElementById('modalBg').classList.remove('active');
+        }
+        // Close modal on background click
+        document.getElementById('modalBg').addEventListener('click', function (e) {
+            if (e.target === this) closeModal();
+        });
+        // ESC key closes modal
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+
+</html>
